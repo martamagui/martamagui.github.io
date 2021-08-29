@@ -1,0 +1,28 @@
+.nav {
+  @extend %DFlexRow;
+  padding: 1vh;
+  justify-content: space-between;
+  span {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  ul {
+    width: 30%;
+  }
+}
+
+.nav__list {
+  @extend %DFlexRow;
+  width: 50%;
+  list-style: none;
+  justify-content: space-between;
+
+  .nav__item {
+    padding: 0.5vh;
+    a {
+      text-decoration: none;
+    }
+  }
+}
