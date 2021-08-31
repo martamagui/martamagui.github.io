@@ -1,11 +1,11 @@
+// Base
+@import "./base/reset";
+@import "./base/typography";
+
 // Abstracs
 @import "./abstracs/mixins";
 @import "./abstracs/placeholders";
 @import "./abstracs/variables";
-
-// Base
-@import "./base/reset";
-@import "./base/typography";
 
 // Components
 @import "./components/buttons";

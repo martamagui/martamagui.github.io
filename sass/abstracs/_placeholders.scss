@@ -1,17 +1,25 @@
 %DFlexRow {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
+
 %DFlexCol {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 %landingCircleDimensions {
-  width: 8vw;
-  height: 8vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
 }
 %landingTriangleBase {
   width: 0;
   height: 0;
+}
+%landingFormsRow2 {
+  width: 16vw;
+  height: 10vw;
 }

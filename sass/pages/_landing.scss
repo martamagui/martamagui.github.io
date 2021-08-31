@@ -1,15 +1,15 @@
 .landing {
   box-sizing: border-box;
-
   height: 100vh;
   @extend %DFlexRow;
   .landing__text__article {
     width: 50vw;
+    padding: 5vw;
   }
   .landing__mosaic {
-    width: 48vw;
+    width: 50vw;
     @extend %DFlexRow;
-    .row__1 {
+    .row-1 {
       #circle-one {
         @extend %landingCircleDimensions;
         background: red;
@@ -38,19 +38,19 @@
         }
       }
     }
-    .row__2 {
+    .row-2 {
       width: 16vw;
       img {
         height: 16vw;
         border-radius: 0% 50%;
       }
-      #form__1 {
+      #form-1 {
         border: 2px solid black;
         width: 16vw;
         height: 8vw;
         border-radius: 4vw;
       }
-      #form__2 {
+      #form-2 {
         border: 2px solid black;
         width: 16vw;
         height: 8vw;
