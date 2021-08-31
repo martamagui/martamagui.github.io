@@ -8,11 +8,20 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quattrocento&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="light__theme" id="body">
     <header>
       <div class="nav">
-        <span>Marta M Aguilera</span>
+        <div id="logoAndName">
+          <img src="imgs/icons/logoMLigth.png" alt="Logo" />
+          <span>Marta M Aguilera</span>
+        </div>
         <ul class="nav__list">
           <li class="nav__item"><a href="#">About</a></li>
           <li class="nav__item"><a href="#">Projects</a></li>
@@ -21,5 +30,16 @@
         </ul>
       </div>
     </header>
+    <main class="main" id="main">
+      <section class="landing" id="landing">
+        <article class="landing__text__article">
+          <h1 class="text__title" id="myName">Marta Molina Aguilera</h1>
+          <h2 class="text__subtitle">I am a Junior Developer.</h2>
+        </article>
+        <article class="landing__mosaic"></article>
+      </section>
+    </main>
+    <footer class="footer" id="foter"></footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

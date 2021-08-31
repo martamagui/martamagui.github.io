@@ -2,14 +2,21 @@
   @extend %DFlexRow;
   padding: 1vh;
   justify-content: space-between;
-  span {
+  #logoAndName {
     width: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @extend %DFlexRow;
+    width: 100%;
+    span {
+      padding: 0.9vh;
+      align-self: center;
+    }
   }
   ul {
     width: 30%;
+    align-self: center;
+  }
+  img {
+    height: 3.5vh;
   }
 }
 

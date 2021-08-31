@@ -1,0 +1,10 @@
+.landing {
+  width: 100vw;
+  @extend %DFlexCol;
+  .landing__text__article {
+    width: 50%;
+  }
+  .landing__mosaic {
+    width: 50%;
+  }
+}
