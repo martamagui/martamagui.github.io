@@ -6,3 +6,12 @@
   display: flex;
   flex-direction: column;
 }
+%landingCircleDimensions {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+}
+%landingTriangleBase {
+  width: 0;
+  height: 0;
+}

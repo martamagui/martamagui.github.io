@@ -1,10 +1,61 @@
 .landing {
-  width: 100vw;
-  @extend %DFlexCol;
+  box-sizing: border-box;
+
+  height: 100vh;
+  @extend %DFlexRow;
   .landing__text__article {
-    width: 50%;
+    width: 50vw;
   }
   .landing__mosaic {
-    width: 50%;
+    width: 48vw;
+    @extend %DFlexRow;
+    .row__1 {
+      #circle-one {
+        @extend %landingCircleDimensions;
+        background: red;
+      }
+      #triangle-one {
+        @extend %landingTriangleBase;
+        border-top: 8vw solid red;
+        border-left: 8vw solid transparent;
+      }
+      #triangle-two {
+        @extend %landingTriangleBase;
+        border-top: 8vw solid red;
+        border-left: 8vw solid transparent;
+      }
+      #circumference-outer {
+        @extend %landingCircleDimensions;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #circumference-inner {
+          width: 50%;
+          height: 50%;
+          border-radius: 50%;
+          border: 2px solid black;
+        }
+      }
+    }
+    .row__2 {
+      width: 16vw;
+      img {
+        height: 16vw;
+        border-radius: 0% 50%;
+      }
+      #form__1 {
+        border: 2px solid black;
+        width: 16vw;
+        height: 8vw;
+        border-radius: 4vw;
+      }
+      #form__2 {
+        border: 2px solid black;
+        width: 16vw;
+        height: 8vw;
+        border-radius: 8vw 8vw 0vw 0vw;
+      }
+    }
   }
 }
