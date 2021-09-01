@@ -42,14 +42,18 @@ h1 {
 }
 
 .landing .landing__mosaic .row-1 #circumference-outer, .landing .landing__mosaic .row-1 #circle-one {
-  width: 10vw;
-  height: 10vw;
+  width: 9vw;
+  height: 9vw;
   border-radius: 50%;
 }
 
 .landing .landing__mosaic .row-1 #triangle-two, .landing .landing__mosaic .row-1 #triangle-one {
   width: 0;
   height: 0;
+}
+
+.icon {
+  width: 3vw;
 }
 
 .nav {
@@ -154,13 +158,13 @@ h1 {
 }
 .landing .landing__mosaic .row-2 #form-1 {
   border: 2px solid black;
-  width: 16vw;
+  width: 12vw;
   height: 8vw;
   border-radius: 4vw;
 }
 .landing .landing__mosaic .row-2 #form-2 {
   border: 2px solid black;
-  width: 16vw;
+  width: 12vw;
   height: 8vw;
   border-radius: 8vw 8vw 0vw 0vw;
 }
