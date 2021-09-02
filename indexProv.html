@@ -13,10 +13,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quattrocento&display=swap"
       rel="stylesheet"
-    />
+      />
   </head>
-  <body class="light__theme" id="body">
-    <header>
+  <body>
+    <header id="header" class="light__theme">
       <div class="nav">
         <div id="logoAndName">
           <img src="imgs/icons/logoMLigth.png" alt="Logo" />
@@ -24,17 +24,16 @@
         </div>
         <ul class="nav__list">
           <li class="nav__item"><a href="#about">About</a></li>
-          <li class="nav__item"><a href="#">Work</a></li>
-          <li class="nav__item"><a href="#">Experience</a></li>
+          <li class="nav__item"><a href="#work">Work</a></li>
+          <li class="nav__item"><a href="#experience">Experience</a></li>
           <li class="nav__item"><a href="#">Contact</a></li>
           <li class="nav__item"><a href="#">Resume</a></li>
         </ul>
       </div>
     </header>
 
-    <main class="main" id="main">
+    <main class="light__theme" id="main">
       <section class="landing" id="landing">
-        
         <article class="landing__text__article">
           <p id="big-text">Hi, my name is,</p>
           <h1 class="text__title" id="myName">Marta Molina.</h1>
@@ -64,7 +63,7 @@
         </article>
       </section>
 
-      <section id="about" class="about">
+      <section id="about" class="section-1">
         <article class="about__article">
           <h2 class="text__title-2">About</h2>
           <p class="text-2">
@@ -122,25 +121,22 @@
             <img src="imgs/icons/git.png" alt="Git icon" class="icon" />
             <span>Also, but not less important: Git </span>
           </div>
-        </article>        
+        </article>
       </section>
-      
-      <section class="experience" id="experience">
+
+      <section class="experience section-2" id="experience">
         <article class="experience__article" id="experience__article">
           <h2 class="text__subtitle" id="experience__title">Experience</h2>
           <div class="experience">
-            <span
-              >So far the experience I had as programmer is my aproach as
+            <span>So far the experience I had as programmer is my aproach as
               student to the developing world and my will of keep learing as a
               curious been. Some of my achivements so far are:
             </span>
             <ul>
               <li>
-                <span class="li__text-big"
-                  >"Las doce uvas" - 4th place - Dec. 2020.</span
-                >
-                <span
-                  >I took part in this contest organised by the "Complutense
+                <span class="li__text-big">" Las doce uvas" - 4th place - Dec.
+                  2020.</span>
+                <span>I took part in this contest organised by the "Complutense
                   University". I solved those challenges with Java... And I
                   achieved the 4th place in the VT II category!
                 </span>
@@ -150,7 +146,7 @@
         </article>
       </section>
 
-      <section class="work" id="work">
+      <section class="work section-1" id="work">
         <article class="work__article" id="work__article">
           <h2 class="text__subtitle-2" id="work__title">Work</h2>
           <span>These are some projects I've been working on: </span>
@@ -158,25 +154,43 @@
             <div class="card-combo">
               <div class="card__caption">
                 <h3 class="card__title">Square-match! Game</h3>
-                <span class="card__description"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="card__description">Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
                   Accusantium deleniti totam quaerat quae, earum quia natus
                   velit nam error dolore adipisci, nobis iusto doloribus
-                  consequuntur cupiditate, aliquid nihil nesciunt minima.</span
-                >
+                  consequuntur cupiditate, aliquid nihil nesciunt minima.</span>
               </div>
-              <img src="#" alt="Project screen shot" />
+              <img src="#" alt="Project screen-shot" />
             </div>
           </div>
         </article>
       </section>
 
+      <section class="section-2" id="contact">
+        <article class="contact__article">
+          <h2 class="text__subtitle-1">Contact</h2>
+          <span></span>
+          <button> <a href="mailto:marta.molina@live.u-tad.com" target="_blank">Get in touch!</a></button>
+        </article>
+      </section>
     </main>
-    <aside class="aside" id="aside">
-      <div class="linkedin"></div>
-      <div class="github" id="github"></div>
+
+    <aside class="left-aside" id="aside">
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/marta-m-aguilera/">
+          <img src="imgs/icons/linkedin.png" alt="Linkedin logo"/>
+          </a>
+      </div>
+      <div class="github" id="github">
+        <img src="imgs/icons/github.png" alt="Github logo" />
+      </div>
     </aside>
-    <footer class="footer" id="foter"></footer>
+
+    <footer class="footer" id="foter">
+        <button><a href="#landing">Back to top</a></button>
+      <span> Site designed and created by Marta Molina Aguilera</span>
+    </footer>
+    
     <script src="js/app.js"></script>
   </body>
 </html>
