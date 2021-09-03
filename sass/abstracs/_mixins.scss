@@ -1,0 +1,32 @@
+// Typography
+@mixin titleBase($size) {
+  height: $size + 3;
+  line-height: $size + 2;
+  display: flex;
+  align-content: center;
+  .letter,
+  .word {
+    box-sizing: border-box;
+    font: {
+      size: $size;
+      family: "Oswald", sans-serif;
+    }
+    padding: 0.2vh;
+    text-align: end;
+  }
+  .word {
+    display: none;
+  }
+  .letter:hover {
+    @include scaleLetterAnimation($size);
+  }
+}
+
+// Animations
+@mixin scaleLetterAnimation($lineH) {
+  transform: scale(1.4);
+  transform: rotateZ(4deg);
+  padding: 0.1vh;
+  line-height: $lineH + ($lineH/2);
+  transition: transform 0.3s;
+}

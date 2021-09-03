@@ -1,3 +1,4 @@
+// Layouts
 %DFlexRow {
   display: flex;
   flex-direction: row;
@@ -10,6 +11,15 @@
   align-items: center;
   justify-content: center;
 }
+%DFlexColStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+}
+// Css Drawings
+
 %landingCircleDimensions {
   width: 9vw;
   height: 9vw;
@@ -22,4 +32,13 @@
 %landingFormsRow2 {
   width: 16vw;
   height: 10vw;
+}
+
+// Animations
+
+%scaleLetterAnimation {
+  transform: scale(1.4);
+  padding: 0.1vh;
+  line-height: 10.3vh;
+  transition: transform 0.2s;
 }

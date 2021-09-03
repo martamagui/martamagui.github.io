@@ -1,0 +1,84 @@
+#about {
+  width: 100%;
+  @extend %DFlexCol;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  #about-description {
+    height: 100vh;
+    @extend %DFlexColStart;
+    flex-wrap: wrap;
+    width: 99vw;
+    h2,
+    p {
+      padding: {
+        left: 5vw;
+        bottom: 2vw;
+      }
+      width: 30vw;
+    }
+    .mosaic {
+      width: auto;
+      padding-left: 2vw;
+      padding-right: 5vw;
+      @extend %DFlexRow;
+      .row-1 {
+        #circle-one {
+          @extend %landingCircleDimensions;
+          background: red;
+        }
+        #triangle-one {
+          @extend %landingTriangleBase;
+          border-top: 8vw solid red;
+          border-left: 8vw solid transparent;
+        }
+        #triangle-two {
+          @extend %landingTriangleBase;
+          border-top: 8vw solid red;
+          border-left: 8vw solid transparent;
+        }
+        #circumference-outer {
+          @extend %landingCircleDimensions;
+          border: 2px solid black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          #circumference-inner {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            border: 2px solid black;
+          }
+        }
+      }
+      .row-2 {
+        width: 16vw;
+        img {
+          height: 16vw;
+          border-radius: 0% 50%;
+        }
+        #form-1 {
+          border: 2px solid black;
+          width: 12vw;
+          height: 8vw;
+          border-radius: 4vw;
+        }
+        #form-2 {
+          border: 2px solid black;
+          width: 12vw;
+          height: 8vw;
+          border-radius: 8vw 8vw 0vw 0vw;
+        }
+      }
+    }
+  }
+}
+#about-title::before {
+  content: "01 . - ";
+  font: {
+    size: 2.5vh;
+    family: "Oswald", sans-serif;
+  }
+  align-self: center;
+  padding: 1vh;
+}
