@@ -14,6 +14,9 @@
     padding: 0.2vh;
     text-align: end;
   }
+  .space {
+    padding: 0.5vh;
+  }
   .word {
     display: none;
   }
@@ -21,12 +24,27 @@
     @include scaleLetterAnimation($size);
   }
 }
+// Grid
+@mixin gridBase($columns, $size) {
+  display: grid;
+  grid-template-columns: repeat($columns, $size);
+}
 
 // Animations
 @mixin scaleLetterAnimation($lineH) {
-  transform: scale(1.4);
-  transform: rotateZ(4deg);
+  transform: scale(1.2) rotateZ(4deg);
   padding: 0.1vh;
   line-height: $lineH + ($lineH/2);
   transition: transform 0.3s;
+}
+
+// Before
+@mixin beforeTitles($string) {
+  content: $string;
+  font: {
+    size: 2.5vh;
+    family: "Oswald", sans-serif;
+  }
+  align-self: center;
+  padding: 1vh;
 }

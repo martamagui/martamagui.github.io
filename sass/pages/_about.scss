@@ -1,22 +1,18 @@
 #about {
   width: 100%;
   @extend %DFlexCol;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
+  h2,
+  .side-text {
+    padding: {
+      left: 5vw;
+      bottom: 2vw;
+    }
+    width: 30vw;
+  }
   #about-description {
     height: 100vh;
     @extend %DFlexColStart;
     flex-wrap: wrap;
-    width: 99vw;
-    h2,
-    p {
-      padding: {
-        left: 5vw;
-        bottom: 2vw;
-      }
-      width: 30vw;
-    }
     .mosaic {
       width: auto;
       padding-left: 2vw;
@@ -72,13 +68,32 @@
       }
     }
   }
-}
-#about-title::before {
-  content: "01 . - ";
-  font: {
-    size: 2.5vh;
-    family: "Oswald", sans-serif;
+  .skills {
+    @extend %DFlexColStart;
+    flex-wrap: wrap;
+    .skills__inner-container {
+      width: 70vw;
+      @include gridBase(3, 10vw);
+      .skills__card {
+        @extend %DFlexCol;
+        padding: 1vw;
+        h4 {
+          padding: 0.5vw;
+        }
+      }
+    }
+    #git {
+      @extend %DFlexRow;
+      span {
+        padding: 0.5vw;
+      }
+    }
   }
-  align-self: center;
-  padding: 1vh;
+}
+#about__title::before {
+  @include beforeTitles("01 . - ");
+}
+
+#skills__title::before {
+  @include beforeTitles("01. 1 - ");
 }

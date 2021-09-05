@@ -1,4 +1,4 @@
-// Layouts
+// Layouts Flex
 %DFlexRow {
   display: flex;
   flex-direction: row;
@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
 }
+
 %DFlexColStart {
   display: flex;
   flex-direction: column;

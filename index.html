@@ -27,7 +27,7 @@
           <li class="nav__item"><a href="#about">About</a></li>
           <li class="nav__item"><a href="#work">Work</a></li>
           <li class="nav__item"><a href="#experience">Experience</a></li>
-          <li class="nav__item"><a href="#">Contact</a></li>
+          <li class="nav__item"><a href="#contact">Contact</a></li>
           <li class="nav__item"><a href="#">Resume</a></li>
         </ul>
       </div>
@@ -42,17 +42,16 @@
           <h2 class="text__subtitle">Junior Developer</h2>
           <p class="text">
             Im a Software Development student (VT II). <br />
-            I really enjoy to learn new stuff every day. I'm always craving to
-            learn more, searching on Youtube,Twitch, CodeAcademy and Google. I'm
-            really having fun on my way to become a developer.
+            I really enjoy to learn new stuff every day. I'm really having fun
+            on my way to become a developer.
           </p>
         </article>
       </section>
 
       <!--About-->
       <section id="about" class="section-1">
-        <article class="about__article" id="about-description">
-          <h2 class="text__title-medium" id="about-title">
+        <article class="about__article about" id="about-description">
+          <h2 class="text__title-medium" id="about__title">
             <!--La clase word es solo para mobile-->
             <span class="word">About</span>
             <span class="letter">A</span>
@@ -61,20 +60,23 @@
             <span class="letter">u</span>
             <span class="letter">t</span>
           </h2>
-          <p class="text-2">
+          <p class="text-2 side-text">
             My name is Marta, I'm a Software Development student (VT II). I'm
             currently coursing my second year at U-tad. What can I say... I'm
             loving it. So far, so good. I started this course doubting about it,
             was I really meant to learn this?... But the code-world was an
             exciting adventure waiting to be discovered.
           </p>
-          <p class="text-2">
+          <p class="text-2 side-text">
             I'm enjoying every day of this journey. I can't wait for the next
-            thing. I'm always craving to learn more. I'm really having fun on my
-            way to become a programmer. In my spare time you can usually find me
-            spending time with my family and cats, doing some exercise, hanging
-            out with my friends... Or even sewing! I'm sure not many programmers
-            you know, know how to sew!
+            thing. I'm always craving to learn more, searching on Youtube,
+            CodeAcademy and Google.
+          </p>
+          <p class="text-2 side-text">
+            In my spare time you can usually find me spending time with my
+            family and cats, doing some exercise, hanging out with my friends...
+            Or even sewing! I'm sure not many programmers you know, know how to
+            sew!
           </p>
           <div class="mosaic" id="mosaic">
             <div class="row-1">
@@ -95,12 +97,12 @@
         </article>
 
         <!--About: Skills-->
-        <article class="about__article">
-          <h3 class="text__title-small">
+        <article class="about__article skills">
+          <h3 class="text__title-small" id="skills__title">
             <span class="word">My skills</span>
             <span class="letter">M</span>
             <span class="letter">y</span>
-            <span class="letter"> </span>
+            <span class="space"> </span>
             <span class="letter">s</span>
             <span class="letter">k</span>
             <span class="letter">i</span>
@@ -108,44 +110,44 @@
             <span class="letter">l</span>
             <span class="letter">s</span>
           </h3>
-          <p class="text">
+          <p class="text side-text">
             Since I started learing develompent one year ago; I have created
             responsive websites using HTML, CSS, JS and Bootstrap, I have
-            created Java small applications, created databases and learnt more
+            develop a Java small application, created databases and learnt more
             on my own.
           </p>
-          <div class="skills">
-            <div class="skill">
+          <div class="skills__inner-container">
+            <div class="skills__card">
               <img src="imgs/icons/java.png" alt="Java icon" class="icon" />
               <h4>Java</h4>
             </div>
-            <div class="skill">
+            <div class="skills__card">
               <img src="imgs/icons/html.png" alt="Html icon" class="icon" />
               <h4>HTML</h4>
             </div>
-            <div class="skill">
+            <div class="skills__card">
               <img src="imgs/icons/css.png" alt="CSS icon" class="icon" />
               <h4>CSS</h4>
             </div>
-            <div class="skill">
+            <div class="skills__card">
               <img src="imgs/icons/js.png" alt="JavaScript icon" class="icon" />
               <h4>JavaScript</h4>
             </div>
-            <div class="skill">
+            <div class="skills__card">
               <img src="imgs/icons/mysql.png" alt="MySql icon" class="icon" />
               <h4>MySql</h4>
             </div>
-            <div class="skill">
+            <div class="skills__card">
               <img src="imgs/icons/mongo.png" alt="Mongo icon" class="icon" />
               <h4>MongoDB</h4>
             </div>
-            <div class="skill">
+            <div class="skills__card">
               <img src="imgs/icons/react.png" alt="React icon" class="icon" />
               <h4>React</h4>
             </div>
-            <div class="skill">
+            <div class="skills__card">
               <img src="imgs/icons/sass.png" alt="Sass icon" class="icon" />
-              <sh4>Sass</sh4>
+              <h4>Sass</h4>
             </div>
           </div>
           <div id="git">
@@ -231,7 +233,7 @@
 
     <!-- Footer -->
     <footer class="footer light__theme" id="foter">
-      <button><a href="#landing">Back to top</a></button>
+      <button><a href="#header">Back to top</a></button>
       <span> Site designed and created by Marta Molina Aguilera</span>
     </footer>
 

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +21,7 @@ a {
           flex-direction: column;
 }
 
-.landing, #about #about-description .mosaic, .nav .nav__list, .nav #logoAndName, .nav {
+.landing, #about .skills #git, #about #about-description .mosaic, .nav .nav__list, .nav #logoAndName, .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +34,7 @@ a {
           align-items: center;
 }
 
-#about {
+#about .skills .skills__inner-container .skills__card, #about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +50,7 @@ a {
           justify-content: center;
 }
 
-#about #about-description {
+#about .skills, #about #about-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +92,7 @@ h1 {
 
 p,
 span {
-  font-size: 2.3vh;
+  font-size: 2.1vh;
 }
 
 .text__title-medium {
@@ -110,14 +114,15 @@ span {
   padding: 0.2vh;
   text-align: end;
 }
+.text__title-medium .space {
+  padding: 0.5vh;
+}
 .text__title-medium .word {
   display: none;
 }
 .text__title-medium .letter:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  -webkit-transform: rotateZ(4deg);
-          transform: rotateZ(4deg);
+  -webkit-transform: scale(1.2) rotateZ(4deg);
+          transform: scale(1.2) rotateZ(4deg);
   padding: 0.1vh;
   line-height: 10.5vh;
   -webkit-transition: -webkit-transform 0.3s;
@@ -127,8 +132,8 @@ span {
 }
 
 .text__title-small {
-  height: 9vh;
-  line-height: 8vh;
+  height: 7.5vh;
+  line-height: 6.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,21 +144,22 @@ span {
 .text__title-small .word {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 6vh;
+  font-size: 4.5vh;
   font-family: "Oswald", sans-serif;
   padding: 0.2vh;
   text-align: end;
+}
+.text__title-small .space {
+  padding: 0.5vh;
 }
 .text__title-small .word {
   display: none;
 }
 .text__title-small .letter:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  -webkit-transform: rotateZ(4deg);
-          transform: rotateZ(4deg);
+  -webkit-transform: scale(1.2) rotateZ(4deg);
+          transform: scale(1.2) rotateZ(4deg);
   padding: 0.1vh;
-  line-height: 9vh;
+  line-height: 6.75vh;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -218,27 +224,17 @@ span {
 }
 #about {
   width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+#about h2,
+#about .side-text {
+  padding-left: 5vw;
+  padding-bottom: 2vw;
+  width: 30vw;
 }
 #about #about-description {
   height: 100vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 99vw;
-}
-#about #about-description h2,
-#about #about-description p {
-  padding-left: 5vw;
-  padding-bottom: 2vw;
-  width: 30vw;
 }
 #about #about-description .mosaic {
   width: auto;
@@ -293,9 +289,39 @@ span {
   height: 8vw;
   border-radius: 8vw 8vw 0vw 0vw;
 }
+#about .skills {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#about .skills .skills__inner-container {
+  width: 70vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10vw)[3];
+  grid-template-columns: repeat(3, 10vw);
+}
+#about .skills .skills__inner-container .skills__card {
+  padding: 1vw;
+}
+#about .skills .skills__inner-container .skills__card h4 {
+  padding: 0.5vw;
+}
+#about .skills #git span {
+  padding: 0.5vw;
+}
 
-#about-title::before {
+#about__title::before {
   content: "01 . - ";
+  font-size: 2.5vh;
+  font-family: "Oswald", sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1vh;
+}
+
+#skills__title::before {
+  content: "01. 1 - ";
   font-size: 2.5vh;
   font-family: "Oswald", sans-serif;
   -ms-flex-item-align: center;

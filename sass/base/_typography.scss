@@ -11,7 +11,7 @@ h1 {
 }
 p,
 span {
-  font-size: 2.3vh;
+  font-size: 2.1vh;
 }
 
 .text__title-medium {
@@ -20,5 +20,5 @@ span {
 }
 
 .text__title-small {
-  @include titleBase(6vh);
+  @include titleBase(4.5vh);
 }
