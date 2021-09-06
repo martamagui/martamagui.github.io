@@ -1,6 +1,8 @@
 #about {
   width: 100%;
   @extend %DFlexCol;
+  align-items: center;
+  align-content: center;
   h2,
   .side-text {
     padding: {
@@ -18,7 +20,7 @@
       padding-left: 2vw;
       padding-right: 5vw;
       @extend %DFlexRow;
-      .row-1 {
+      .column-1 {
         #circle-one {
           @extend %landingCircleDimensions;
           background: red;
@@ -47,7 +49,7 @@
           }
         }
       }
-      .row-2 {
+      .column-2 {
         width: 16vw;
         img {
           height: 16vw;
@@ -69,23 +71,33 @@
     }
   }
   .skills {
-    @extend %DFlexColStart;
-    flex-wrap: wrap;
-    .skills__inner-container {
-      width: 70vw;
-      @include gridBase(3, 10vw);
-      .skills__card {
-        @extend %DFlexCol;
-        padding: 1vw;
-        h4 {
-          padding: 0.5vw;
+    padding: 5vh;
+    @extend %DFlexCol;
+    .skills__text-container {
+      h3,
+      .side-text {
+        padding: {
+          left: 5vw;
+          bottom: 2vw;
         }
+        width: 40vw;
       }
     }
-    #git {
-      @extend %DFlexRow;
-      span {
-        padding: 0.5vw;
+    .skills__card-container {
+      padding: 5vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5vh;
+      #git {
+        padding: 1vh;
+        background-color: white;
+        border-radius: 10%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        @extend %DFlexRow;
+        span {
+          padding: 0.5vw;
+        }
       }
     }
   }

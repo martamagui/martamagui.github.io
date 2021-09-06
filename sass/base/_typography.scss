@@ -22,3 +22,10 @@ span {
 .text__title-small {
   @include titleBase(4.5vh);
 }
+.li__text-big {
+  font: {
+    size: 3vh;
+    family: "Oswald", sans-serif;
+  }
+  font-weight: 700;
+}

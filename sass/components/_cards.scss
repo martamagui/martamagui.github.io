@@ -1,3 +1,20 @@
 .icon {
   width: 3vw;
 }
+.skills__card {
+  background-color: white;
+  border-radius: 10%;
+  min-height: 13vh;
+  @extend %DFlexCol;
+  justify-content: center;
+  h4 {
+    justify-self: flex-end;
+    padding: {
+      top: 1.5vh;
+      bottom: 1vh;
+    }
+  }
+  img {
+    padding-top: 1vh;
+  }
+}

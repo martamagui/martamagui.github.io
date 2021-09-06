@@ -24,11 +24,6 @@
     @include scaleLetterAnimation($size);
   }
 }
-// Grid
-@mixin gridBase($columns, $size) {
-  display: grid;
-  grid-template-columns: repeat($columns, $size);
-}
 
 // Animations
 @mixin scaleLetterAnimation($lineH) {

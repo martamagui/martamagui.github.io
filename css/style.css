@@ -21,7 +21,7 @@ a {
           flex-direction: column;
 }
 
-.landing, #about .skills #git, #about #about-description .mosaic, .nav .nav__list, .nav #logoAndName, .nav {
+.landing, #about .skills .skills__card-container #git, #about #about-description .mosaic, .nav .nav__list, .nav #logoAndName, .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@ a {
           align-items: center;
 }
 
-#about .skills .skills__inner-container .skills__card, #about {
+#experience .experience__text-container ul, #experience, #about .skills, #about, .skills__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +50,7 @@ a {
           justify-content: center;
 }
 
-#about .skills, #about #about-description {
+#about #about-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,13 +68,13 @@ a {
       align-content: center;
 }
 
-#about #about-description .mosaic .row-1 #circumference-outer, #about #about-description .mosaic .row-1 #circle-one {
+#about #about-description .mosaic .column-1 #circumference-outer, #about #about-description .mosaic .column-1 #circle-one {
   width: 9vw;
   height: 9vw;
   border-radius: 50%;
 }
 
-#about #about-description .mosaic .row-1 #triangle-two, #about #about-description .mosaic .row-1 #triangle-one {
+#about #about-description .mosaic .column-1 #triangle-two, #about #about-description .mosaic .column-1 #triangle-one {
   width: 0;
   height: 0;
 }
@@ -166,8 +166,31 @@ span {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.li__text-big {
+  font-size: 3vh;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
 .icon {
   width: 3vw;
+}
+
+.skills__card {
+  background-color: white;
+  border-radius: 10%;
+  min-height: 13vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills__card h4 {
+  justify-self: flex-end;
+  padding-top: 1.5vh;
+  padding-bottom: 1vh;
+}
+.skills__card img {
+  padding-top: 1vh;
 }
 
 .nav {
@@ -224,6 +247,11 @@ span {
 }
 #about {
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 #about h2,
 #about .side-text {
@@ -241,18 +269,18 @@ span {
   padding-left: 2vw;
   padding-right: 5vw;
 }
-#about #about-description .mosaic .row-1 #circle-one {
+#about #about-description .mosaic .column-1 #circle-one {
   background: red;
 }
-#about #about-description .mosaic .row-1 #triangle-one {
+#about #about-description .mosaic .column-1 #triangle-one {
   border-top: 8vw solid red;
   border-left: 8vw solid transparent;
 }
-#about #about-description .mosaic .row-1 #triangle-two {
+#about #about-description .mosaic .column-1 #triangle-two {
   border-top: 8vw solid red;
   border-left: 8vw solid transparent;
 }
-#about #about-description .mosaic .row-1 #circumference-outer {
+#about #about-description .mosaic .column-1 #circumference-outer {
   border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,49 +292,58 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#about #about-description .mosaic .row-1 #circumference-outer #circumference-inner {
+#about #about-description .mosaic .column-1 #circumference-outer #circumference-inner {
   width: 50%;
   height: 50%;
   border-radius: 50%;
   border: 2px solid black;
 }
-#about #about-description .mosaic .row-2 {
+#about #about-description .mosaic .column-2 {
   width: 16vw;
 }
-#about #about-description .mosaic .row-2 img {
+#about #about-description .mosaic .column-2 img {
   height: 16vw;
   border-radius: 0% 50%;
 }
-#about #about-description .mosaic .row-2 #form-1 {
+#about #about-description .mosaic .column-2 #form-1 {
   border: 2px solid black;
   width: 12vw;
   height: 8vw;
   border-radius: 4vw;
 }
-#about #about-description .mosaic .row-2 #form-2 {
+#about #about-description .mosaic .column-2 #form-2 {
   border: 2px solid black;
   width: 12vw;
   height: 8vw;
   border-radius: 8vw 8vw 0vw 0vw;
 }
 #about .skills {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding: 5vh;
 }
-#about .skills .skills__inner-container {
-  width: 70vw;
+#about .skills .skills__text-container h3,
+#about .skills .skills__text-container .side-text {
+  padding-left: 5vw;
+  padding-bottom: 2vw;
+  width: 40vw;
+}
+#about .skills .skills__card-container {
+  padding: 5vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (10vw)[3];
-  grid-template-columns: repeat(3, 10vw);
+  -ms-grid-columns: 1fr 1.5vh 1fr 1.5vh 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5vh;
 }
-#about .skills .skills__inner-container .skills__card {
-  padding: 1vw;
+#about .skills .skills__card-container #git {
+  padding: 1vh;
+  background-color: white;
+  border-radius: 10%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 3;
+  grid-column-end: 4;
 }
-#about .skills .skills__inner-container .skills__card h4 {
-  padding: 0.5vw;
-}
-#about .skills #git span {
+#about .skills .skills__card-container #git span {
   padding: 0.5vw;
 }
 
@@ -336,8 +373,46 @@ span {
   height: 100vh;
 }
 .landing .landing__text__article {
-  width: 50vw;
+  width: 41vw;
   padding: 5vw;
+}
+.landing .landing__text__article .text__subtitle {
+  padding-bottom: 1.5vh;
+}
+
+#experience {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+#experience .experience__text-container {
+  width: 55vw;
+  padding-top: 3vh;
+}
+#experience .experience__text-container ul {
+  width: 45vw;
+  padding-top: 3vh;
+  padding-left: 5vw;
+}
+
+.li__text-small {
+  padding-top: 0.5vw;
+  padding-left: 2.5vw;
+}
+
+#experience__title::before {
+  content: "02 . - ";
+  font-size: 2.5vh;
+  font-family: "Oswald", sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1vh;
 }
 
 .light__theme {

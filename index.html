@@ -32,6 +32,7 @@
         </ul>
       </div>
     </header>
+
     <!--Main-->
     <main class="light__theme" id="main">
       <!--Landing-->
@@ -40,8 +41,8 @@
           <p id="big-text">Hi, my name is,</p>
           <h1 class="text__title" id="myName">Marta Molina.</h1>
           <h2 class="text__subtitle">Junior Developer</h2>
+          <p class="text">Im a Software Development student (VT II).</p>
           <p class="text">
-            Im a Software Development student (VT II). <br />
             I really enjoy to learn new stuff every day. I'm really having fun
             on my way to become a developer.
           </p>
@@ -79,7 +80,7 @@
             sew!
           </p>
           <div class="mosaic" id="mosaic">
-            <div class="row-1">
+            <div class="column-1">
               <div class="" id="circle-one"></div>
               <div id="triangle-one"></div>
               <div id="triangle-two"></div>
@@ -87,7 +88,7 @@
                 <div id="circumference-inner"></div>
               </div>
             </div>
-            <div class="row-2">
+            <div class="column-2">
               <img src="imgs/photos/me.jpg" alt="Me" />
               <div id="form-1"></div>
               <div id="form-2"></div>
@@ -98,25 +99,28 @@
 
         <!--About: Skills-->
         <article class="about__article skills">
-          <h3 class="text__title-small" id="skills__title">
-            <span class="word">My skills</span>
-            <span class="letter">M</span>
-            <span class="letter">y</span>
-            <span class="space"> </span>
-            <span class="letter">s</span>
-            <span class="letter">k</span>
-            <span class="letter">i</span>
-            <span class="letter">l</span>
-            <span class="letter">l</span>
-            <span class="letter">s</span>
-          </h3>
-          <p class="text side-text">
-            Since I started learing develompent one year ago; I have created
-            responsive websites using HTML, CSS, JS and Bootstrap, I have
-            develop a Java small application, created databases and learnt more
-            on my own.
-          </p>
-          <div class="skills__inner-container">
+          <div class="skills__text-container">
+            <h3 class="text__title-small" id="skills__title">
+              <span class="word">My skills</span>
+              <span class="letter">M</span>
+              <span class="letter">y</span>
+              <span class="space"> </span>
+              <span class="letter">s</span>
+              <span class="letter">k</span>
+              <span class="letter">i</span>
+              <span class="letter">l</span>
+              <span class="letter">l</span>
+              <span class="letter">s</span>
+            </h3>
+            <p class="text side-text" id="skills__description">
+              Since I started learing develompent one year ago; I have created
+              responsive websites using HTML, CSS, JS and Bootstrap, I have
+              develop a Java small application, created databases and learnt
+              more on my own.
+            </p>
+          </div>
+
+          <div class="skills__card-container">
             <div class="skills__card">
               <img src="imgs/icons/java.png" alt="Java icon" class="icon" />
               <h4>Java</h4>
@@ -135,7 +139,6 @@
             </div>
             <div class="skills__card">
               <img src="imgs/icons/mysql.png" alt="MySql icon" class="icon" />
-              <h4>MySql</h4>
             </div>
             <div class="skills__card">
               <img src="imgs/icons/mongo.png" alt="Mongo icon" class="icon" />
@@ -149,10 +152,10 @@
               <img src="imgs/icons/sass.png" alt="Sass icon" class="icon" />
               <h4>Sass</h4>
             </div>
-          </div>
-          <div id="git">
-            <img src="imgs/icons/git.png" alt="Git icon" class="icon" />
-            <span>Also, but not less important: Git </span>
+            <div id="git">
+              <img src="imgs/icons/git.png" alt="Git icon" class="icon" />
+              <span>Also, but not less important: Git </span>
+            </div>
           </div>
         </article>
       </section>
@@ -160,23 +163,38 @@
       <!-- Experience -->
       <section class="experience section-2" id="experience">
         <article class="experience__article" id="experience__article">
-          <h2 class="text__subtitle" id="experience__title">Experience</h2>
-          <div class="experience">
-            <span
+          <h2
+            class="text__subtitle text__title-medium text-2"
+            id="experience__title"
+          >
+            <span class="word">Experience</span>
+            <span class="letter">E</span>
+            <span class="letter">x</span>
+            <span class="letter">p</span>
+            <span class="letter">e</span>
+            <span class="letter">r</span>
+            <span class="letter">i</span>
+            <span class="letter">e</span>
+            <span class="letter">n</span>
+            <span class="letter">c</span>
+            <span class="letter">e</span>
+          </h2>
+          <div class="experience__text-container">
+            <span class="text-2"
               >So far the experience I had as programmer is my aproach as
               student to the developing world and my will of keep learing as a
-              curious been. Some of my achivements so far are:
+              curious been. My achivements so far are:
             </span>
             <ul>
               <li>
-                <span class="li__text-big"
-                  >" Las doce uvas" - 4th place - Dec. 2020.</span
-                >
-                <span
-                  >I took part in this contest organised by the "Complutense
-                  University". I solved those challenges with Java... And I
-                  achieved the 4th place in the VT II category!
-                </span>
+                <p class="text-2 li__text-big">
+                  " Las doce uvas" - 4th place - Dec. 2020.
+                </p>
+                <p class="text-2 li__text-small">
+                  I took part in this nacional contest organised by the
+                  "Complutense University". I solved those challenges with
+                  Java... And I achieved the 4th place in the VT II category!
+                </p>
               </li>
             </ul>
           </div>

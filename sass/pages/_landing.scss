@@ -3,7 +3,12 @@
   height: 100vh;
   @extend %DFlexRow;
   .landing__text__article {
-    width: 50vw;
+    width: 41vw;
     padding: 5vw;
+    .text__subtitle {
+      padding: {
+        bottom: 1.5vh;
+      }
+    }
   }
 }
