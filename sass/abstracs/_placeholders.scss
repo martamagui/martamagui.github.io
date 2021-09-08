@@ -19,6 +19,33 @@
   justify-content: center;
   align-content: center;
 }
+
+// Sections layout
+%SectionBasicLayout {
+  padding: {
+    top: 25vh;
+    bottom: 25vh;
+  }
+  width: 100%;
+  @extend %DFlexCol;
+  align-items: center;
+  align-content: center;
+  .inner-container {
+    width: 55vw;
+
+    padding: {
+      top: 3vh;
+    }
+    ul {
+      width: 45vw;
+      @extend %DFlexCol;
+      padding: {
+        top: 3vh;
+        left: 5vw;
+      }
+    }
+  }
+}
 // Css Drawings
 
 %landingCircleDimensions {
