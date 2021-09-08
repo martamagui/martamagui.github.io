@@ -1,4 +1,4 @@
-// Layouts Flex
+//--------------------------- Layouts Flex
 %DFlexRow {
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@
   align-content: center;
 }
 
-// Sections layout
+//--------------------------- Sections layout
 %SectionBasicLayout {
   padding: {
     top: 25vh;
@@ -46,7 +46,8 @@
     }
   }
 }
-// Css Drawings
+
+//--------------------------- Css Drawings
 
 %landingCircleDimensions {
   width: 9vw;
@@ -62,7 +63,7 @@
   height: 10vw;
 }
 
-// Animations
+//--------------------------- Animations
 
 %scaleLetterAnimation {
   transform: scale(1.4);

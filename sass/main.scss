@@ -6,12 +6,16 @@
 @import "./abstracs/mixins";
 @import "./abstracs/placeholders";
 
+// Themes
+@import "./themes/themes";
+
 // Base
 @import "./base/typography";
 
 // Components
 @import "./components/buttons";
 @import "./components/cards";
+@import "./components/icons";
 
 // Layouts
 @import "./layout/footer";
@@ -25,6 +29,3 @@
 @import "./pages/landing";
 @import "./pages/experience";
 @import "./pages/work";
-
-// Themes
-@import "./themes/themes";

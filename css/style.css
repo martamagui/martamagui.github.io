@@ -99,6 +99,20 @@ a {
   height: 0;
 }
 
+.light__theme {
+  color: #023047;
+  background-color: #d6e9e6;
+}
+.light__theme a {
+  color: #023047;
+}
+.light__theme a:hover {
+  color: #008584;
+}
+
+/*.dark__theme {
+}
+*/
 /*font-family: 'Oswald', sans-serif;
 font-family: 'Quattrocento', serif;*/
 * {
@@ -192,8 +206,18 @@ span {
   font-weight: 700;
 }
 
-.icon {
-  width: 3vw;
+a {
+  outline: none;
+  font-weight: 700;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.button {
+  padding: 2.5vh;
+  border-radius: 3vh;
 }
 
 .skills__card {
@@ -211,6 +235,14 @@ span {
 }
 .skills__card img {
   padding-top: 1vh;
+}
+
+.icon {
+  width: 3vw;
+}
+
+.tiny-icon {
+  height: 4vh;
 }
 
 .nav {
@@ -387,6 +419,16 @@ span {
   padding: 1vh;
 }
 
+#contact__title::before {
+  content: "04 . - ";
+  font-size: 2.5vh;
+  font-family: "Oswald", sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1vh;
+}
+
 .landing {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -424,12 +466,3 @@ span {
       align-self: center;
   padding: 1vh;
 }
-
-.light__theme {
-  color: #023047;
-  background-color: #d6e9e6;
-}
-
-/*.dark__theme {
-}
-*/

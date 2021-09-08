@@ -1,6 +1,14 @@
 .light__theme {
   color: $lightText;
   background-color: $lightBG1;
+
+  //----- Links
+  a {
+    color: $lightText;
+  }
+  a:hover {
+    color: $lHoverText;
+  }
 }
 /*.dark__theme {
 }

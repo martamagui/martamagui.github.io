@@ -29,3 +29,11 @@ span {
   }
   font-weight: 700;
 }
+// ----------- Links
+a {
+  outline: none;
+  font-weight: 700;
+}
+a:link {
+  text-decoration: none;
+}
