@@ -23,12 +23,22 @@
           <img src="imgs/icons/logoMLigth.png" alt="Logo" />
           <span id="nav-name">Marta M Aguilera</span>
         </div>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#about">About</a></li>
-          <li class="nav__item"><a href="#work">Work</a></li>
-          <li class="nav__item"><a href="#experience">Experience</a></li>
-          <li class="nav__item"><a href="#contact">Contact</a></li>
-          <li class="nav__item"><a href="#">Resume</a></li>
+        <ul class="nav__list" id="nav-list">
+          <li class="nav__item d-occult" id="nav-about">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav__item d-occult" id="nav-work">
+            <a href="#work">Work</a>
+          </li>
+          <li class="nav__item d-occult" id="nav-experience">
+            <a href="#experience">Experience</a>
+          </li>
+          <li class="nav__item d-occult" id="nav-contact">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="nav__item d-occult" id="nav-resume">
+            <a href="#">Resume</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -212,9 +222,11 @@
             <span class="letter">k</span>
           </h2>
           <div class="inner-container">
-            <p>These are some projects I've been working on:</p>
-            <div>
-              <div class="card-combo">
+            <p class="work__description">
+              These are some projects I've been working on:
+            </p>
+            <div class="cards__container">
+              <div class="card-combo-1">
                 <div class="card__caption">
                   <h3 class="card__title">Square-match! Game</h3>
                   <p class="card__description text-1">
@@ -224,7 +236,28 @@
                     consequuntur cupiditate, aliquid nihil nesciunt minima.
                   </p>
                 </div>
-                <img src="#" alt="Project screen-shot" />
+                <img
+                  src="imgs/photos/CrossGame.PNG"
+                  alt="Project screen-shot"
+                  class="card__img"
+                  id="card-img-1"
+                />
+              </div>
+              <div class="card-combo-2">
+                <div class="card__caption">
+                  <h3 class="card__title">Previous Portfolio</h3>
+                  <p class="card__description text-1">
+                    This was my very first Portfolio I made it on March, 2021.
+                    Just 6 months after my first contact with the develompent
+                    world.
+                  </p>
+                </div>
+                <img
+                  src="imgs/photos/CrossGame.PNG"
+                  alt="Project screen-shot"
+                  class="card__img"
+                  id="card-img-1"
+                />
               </div>
             </div>
           </div>

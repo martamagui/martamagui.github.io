@@ -15,3 +15,11 @@
     padding-top: 1vh;
   }
 }
+.card-combo-1 {
+  @extend %DFlexRow;
+  @extend %CardLayout;
+}
+.card-combo-2 {
+  @extend %DFlexReverseRow;
+  @extend %CardLayout;
+}

@@ -9,11 +9,12 @@ h1 {
     family: "Oswald", sans-serif;
   }
 }
+
 p,
 span {
   font-size: 2.1vh;
 }
-
+// ------ Titles
 .text__title-medium {
   /* "word class is only for responsive*/
   @include titleBase(7vh);
@@ -22,6 +23,14 @@ span {
 .text__title-small {
   @include titleBase(4.5vh);
 }
+.card__title {
+  font: {
+    size: 3vh;
+    family: "Oswald", sans-serif;
+  }
+}
+
+// ---------- List
 .li__text-big {
   font: {
     size: 3vh;
@@ -29,6 +38,7 @@ span {
   }
   font-weight: 700;
 }
+
 // ----------- Links
 a {
   outline: none;

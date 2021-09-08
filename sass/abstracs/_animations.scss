@@ -1,0 +1,17 @@
+.d-occult {
+  opacity: 0;
+}
+.fade-in {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
