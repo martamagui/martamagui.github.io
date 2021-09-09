@@ -135,27 +135,53 @@ a {
 }
 
 .fade-in-down {
-  -webkit-animation: fadeIn 1.3s;
-          animation: fadeIn 1.3s;
+  -webkit-animation: fadeInDown 1.3s;
+          animation: fadeInDown 1.3s;
   opacity: 1;
 }
 
-@-webkit-keyframes fadeIn {
+.fade-in-up {
+  -webkit-animation: fadeInUp 1.3s;
+          animation: fadeInUp 1.3s;
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
   }
   to {
     opacity: 1;
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
   }
   to {
     opacity: 1;
@@ -294,42 +320,27 @@ a:link {
   padding: 2vh;
   border-radius: 0.2vh;
   border: 0;
-  -webkit-box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;
-          box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;
+  /*box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;*/
 }
 
-.button:hover {
-  -webkit-animation: hoverButton 1s;
-          animation: hoverButton 1s;
-  -webkit-box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
-          box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
-}
-.button:hover a {
-  color: #fff;
-  font-weight: 700;
-}
-
-@-webkit-keyframes hoverButton {
-  from {
-    -webkit-box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;
-            box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;
-  }
-  to {
-    -webkit-box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
-            box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
+/*.button:hover {
+  animation: hoverButton 1s;
+  box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
+  a {
+    color: #fff;
+    font-weight: 700;
   }
 }
 
 @keyframes hoverButton {
   from {
-    -webkit-box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;
-            box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;
+    box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;
   }
   to {
-    -webkit-box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
-            box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
+    box-shadow: 0 0 0 0 #19bc8b, inset 6em 3.5em 0 0 #19bc8b;
   }
 }
+*/
 .skills__card {
   background-color: white;
   border-radius: 10%;
@@ -352,7 +363,21 @@ a:link {
 }
 
 .tiny-icon {
-  height: 4vh;
+  height: 3.5vh;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 2px rgba(111, 108, 108, 0.2);
+          box-shadow: 2px 2px 2px rgba(111, 108, 108, 0.2);
+}
+
+#aside {
+  position: fixed;
+  top: 86vh;
+  right: 1vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5vh;
 }
 
 .nav {

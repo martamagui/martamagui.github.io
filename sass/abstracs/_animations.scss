@@ -2,13 +2,27 @@
   opacity: 0;
 }
 .fade-in-down {
-  animation: fadeIn 1.3s;
+  animation: fadeInDown 1.3s;
   opacity: 1;
 }
-@keyframes fadeIn {
+.fade-in-up {
+  animation: fadeInUp 1.3s;
+  opacity: 1;
+}
+@keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(5vh);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(5vh);
   }
 
   to {
