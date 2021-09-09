@@ -1,3 +1,14 @@
 #contact__title::before {
   @include beforeTitles("04 . - ");
 }
+#contact {
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      padding-bottom: 7vh;
+    }
+  }
+}

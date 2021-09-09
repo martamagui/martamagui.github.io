@@ -25,6 +25,7 @@
 }
 
 //--------------------------- Cards layout
+
 %CardLayout {
   background-color: #fff;
   width: 45vw;
@@ -60,9 +61,8 @@
   .inner-container {
     width: 55vw;
 
-    padding: {
-      top: 3vh;
-    }
+    padding: 6vh;
+
     ul {
       width: 45vw;
       @extend %DFlexCol;

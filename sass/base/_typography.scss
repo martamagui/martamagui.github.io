@@ -43,7 +43,12 @@ span {
 a {
   outline: none;
   font-weight: 700;
+  font-family: "Quattrocento", serif;
 }
 a:link {
   text-decoration: none;
+}
+// ----------- Buttons
+.button {
+  font-size: 2vh;
 }
