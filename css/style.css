@@ -149,8 +149,8 @@ a {
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translateY(5vh);
-            transform: translateY(5vh);
+    -webkit-transform: translateY(-5vh);
+            transform: translateY(-5vh);
   }
   to {
     opacity: 1;
@@ -160,8 +160,8 @@ a {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translateY(5vh);
-            transform: translateY(5vh);
+    -webkit-transform: translateY(-5vh);
+            transform: translateY(-5vh);
   }
   to {
     opacity: 1;

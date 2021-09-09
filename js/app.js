@@ -40,7 +40,7 @@ window.addEventListener("load", async () => {
 
   let time = 0;
   for (let i = 0; i < navbarElements.length; ++i) {
-    time = i * 200;
+    time = i * 150;
     setTimeout(() => addClass(navbarElements[i], "fade-in-down"), time);
     console.log(time);
   }
