@@ -27,12 +27,12 @@
 //--------------------------- Cards layout
 
 %CardLayout {
-  background-color: #fff;
   width: 45vw;
-  border-radius: 2.5vh;
+  border-radius: 1vh;
   .card__caption {
     @extend %DFlexColStart;
     padding: 3.5vh;
+    justify-content: end;
     .card__description {
       padding: {
         top: 1vh;
@@ -40,8 +40,14 @@
       }
     }
   }
+  .card__description-languajes {
+    padding: {
+      top: 2vh;
+      bottom: 2vh;
+    }
+  }
   .card__img {
-    border-radius: 5vh;
+    border-radius: 4vh;
     padding: 3vh;
     height: 15em;
   }

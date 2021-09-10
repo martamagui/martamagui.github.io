@@ -82,19 +82,25 @@ a {
 }
 
 .card-combo-2, .card-combo-1 {
-  background-color: #fff;
   width: 45vw;
-  border-radius: 2.5vh;
+  border-radius: 1vh;
 }
 .card-combo-2 .card__caption, .card-combo-1 .card__caption {
   padding: 3.5vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .card-combo-2 .card__caption .card__description, .card-combo-1 .card__caption .card__description {
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
+.card-combo-2 .card__description-languajes, .card-combo-1 .card__description-languajes {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
 .card-combo-2 .card__img, .card-combo-1 .card__img {
-  border-radius: 5vh;
+  border-radius: 4vh;
   padding: 3vh;
   height: 15em;
 }
@@ -201,6 +207,14 @@ a {
 .light__theme button {
   background-color: #d6e9e6;
 }
+.light__theme .card-combo-1,
+.light__theme .card-combo-2 {
+  background-color: #023047;
+}
+.light__theme .card-combo-1 .card__caption,
+.light__theme .card-combo-2 .card__caption {
+  color: #d6e9e6;
+}
 
 /*.dark__theme {
 }
@@ -219,6 +233,10 @@ h1 {
 p,
 span {
   font-size: 2.1vh;
+}
+
+.card__description-languajes {
+  font-size: 1.7vh;
 }
 
 .text__title-medium {
@@ -344,7 +362,7 @@ a:link {
 */
 .skills__card {
   background-color: white;
-  border-radius: 10%;
+  border-radius: 1vh;
   min-height: 13vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -365,9 +383,6 @@ a:link {
 
 .tiny-icon {
   height: 3.5vh;
-  border-radius: 50%;
-  -webkit-box-shadow: 2px 2px 2px rgba(111, 108, 108, 0.2);
-          box-shadow: 2px 2px 2px rgba(111, 108, 108, 0.2);
 }
 
 #aside {
@@ -525,7 +540,7 @@ a:link {
 #about .skills .skills__card-container #git {
   padding: 1vh;
   background-color: white;
-  border-radius: 10%;
+  border-radius: 1vh;
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-column-span: 3;
