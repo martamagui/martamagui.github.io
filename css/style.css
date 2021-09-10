@@ -132,6 +132,7 @@ a {
 
 .d-occult {
   opacity: 0;
+  list-style: none;
 }
 
 .fade-in-down {

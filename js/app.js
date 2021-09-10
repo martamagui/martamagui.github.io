@@ -26,7 +26,7 @@ const landingElements = [
   "icon-github",
 ];
 
-// ----------------------- Load animation
+// ------------------------------------------------------------------- Load animation
 const addClass = (idName, className) => {
   let element = document.getElementById(idName);
   element.classList.remove("d-occult");
@@ -42,7 +42,6 @@ window.addEventListener("load", async () => {
   for (let i = 0; i < navbarElements.length; ++i) {
     time = i * 150;
     setTimeout(() => addClass(navbarElements[i], "fade-in-down"), time);
-    console.log(time);
   }
   for (let j = 0; j < landingElements.length; ++j) {
     time += 280;
@@ -50,13 +49,40 @@ window.addEventListener("load", async () => {
   }
 });
 
-// ----------------------- Scroll fade in-up animation
+// ------------------------------------------------------------------- Scroll fade in-up animation
 const aboutSection = [
   "about__title",
   "about__p-1",
   "about__p-2",
   "mosaic",
   "about__p-3",
+];
+const mySkillsArticle = [
+  "skills__title",
+  "skills__description",
+  "java-card",
+  "html-card",
+  "css-card",
+  "js-card",
+  "mysql-card",
+  "mongodb-card",
+  "react-card",
+  "sass-card",
+  "git",
+];
+const experienceSection = [
+  "experience__title",
+  "experience-text-1",
+  "experience-li-1",
+  "experience-text-2",
+  "experience-text-3",
+];
+const workSection = ["work__title", "work-text-1", "card-1", "card-2"];
+const contactSectionAndFooter = [
+  "contact__title",
+  "contact-text-1",
+  "contact-button",
+  "footer",
 ];
 
 window.addEventListener("scroll", () => {
@@ -65,22 +91,52 @@ window.addEventListener("scroll", () => {
   //4866
   const aboutScroll = screenScrollY * 0.0616;
   let aboutBool = false;
-  const mySkillsScroll = screenScrollY * 0.205;
+  const mySkillsScroll = screenScrollY * 0.23;
   let mySkillsBool = false;
-  const experienceScroll = screenScrollY * 0.429;
+  const experienceScroll = screenScrollY * 0.47;
   let experienceBool = false;
-  const workScroll = screenScrollY * 0.596;
+  const workScroll = screenScrollY * 0.65;
   let workBool = false;
   const contactScroll = screenScrollY * 0.883;
   let contactBool = false;
   const currentScroll = window.scrollY;
   let time = 10;
+
   if (currentScroll >= aboutScroll && aboutBool === false) {
     for (let i = 0; i < aboutSection.length; ++i) {
-      console.log("entra");
       setTimeout(() => addClass(aboutSection[i], "fade-in-up"), time);
-      time += Math.random(200) + time;
+      time += Math.random(100) + 150;
     }
   }
-  console.log(`Current: ${currentScroll}`);
+  if (currentScroll >= mySkillsScroll && mySkillsBool === false) {
+    time = 100;
+    for (let i = 0; i < mySkillsArticle.length; ++i) {
+      setTimeout(() => addClass(mySkillsArticle[i], "fade-in-up"), time);
+      time += Math.random(100) + 150;
+    }
+  }
+  if (currentScroll >= experienceScroll && experienceBool === false) {
+    time = 100;
+    for (let i = 0; i < experienceSection.length; ++i) {
+      setTimeout(() => addClass(experienceSection[i], "fade-in-up"), time);
+      time += Math.random(100) + 150;
+    }
+  }
+  if (currentScroll >= workScroll && workBool === false) {
+    time = 100;
+    for (let i = 0; i < workSection.length; ++i) {
+      setTimeout(() => addClass(workSection[i], "fade-in-up"), time);
+      time += Math.random(100) + 150;
+    }
+  }
+  if (currentScroll >= contactScroll && contactBool === false) {
+    time = 100;
+    for (let i = 0; i < contactSectionAndFooter.length; ++i) {
+      setTimeout(
+        () => addClass(contactSectionAndFooter[i], "fade-in-up"),
+        time
+      );
+      time += Math.random(100) + 150;
+    }
+  }
 });
