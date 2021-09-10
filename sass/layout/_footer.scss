@@ -1,0 +1,13 @@
+#footer{
+    @extend %DFlexCol;
+    justify-content: space-between;
+    .horizontal-divider{  
+        width: 40vw;
+        height: 1px;
+    }
+    span{
+        padding: 2vh;
+    }
+    
+    
+}

@@ -82,7 +82,7 @@ const contactSectionAndFooter = [
   "contact__title",
   "contact-text-1",
   "contact-button",
-  "footer",
+  
 ];
 
 window.addEventListener("scroll", () => {
