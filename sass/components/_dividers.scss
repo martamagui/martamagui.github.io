@@ -1,4 +1,4 @@
-//-- Top-ABOUT
+//-- Top
 .custom-shape-divider-bottom-1631362363 {
   left: 0;
   width: 100%;
@@ -11,7 +11,7 @@
   width: calc(214% + 1.3px);
   height: 12vh;
 }
-// Bottom-ABOUT
+// -- Bottom
 .custom-shape-divider-top-1631364215 {
   left: 0;
   width: 100%;
@@ -21,8 +21,19 @@
 
 .custom-shape-divider-top-1631364215 svg {
   width: calc(214% + 1.3px);
-  height: 79px;
+  height: 12vh;
 }
-#experience-divider-top {
-  transform: rotate(180deg) translateY(-20px);
+// -- Contact
+.custom-shape-divider-bottom-1631374900 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1631374900 svg {
+  width: calc(300% + 1.3px);
+  height: 186px;
 }

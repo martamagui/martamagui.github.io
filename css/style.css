@@ -47,7 +47,7 @@ a {
           align-items: center;
 }
 
-#about .skills, #about, #footer, .skills__card, .section .inner-container ul, .section {
+#about .skills, #about, #footer, .skills__card, .section .inner-container ul, .section article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,18 +106,25 @@ a {
 }
 
 .section {
+  width: 100%;
+}
+.section article {
+  width: 100%;
   padding-top: 25vh;
   padding-bottom: 25vh;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
 }
-.section .inner-container {
+.section .container {
+  width: auto;
   width: 55vw;
-  padding: 6vh;
+}
+.section .inner-container {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
 }
 .section .inner-container ul {
   width: 45vw;
@@ -199,14 +206,15 @@ a {
   background: white;
   background: radial-gradient(circle, rgba(255, 183, 3, 0.8) 0%, rgba(251, 133, 0, 0.8) 100%);
 }
-.light__theme .custom-shape-divider-bottom-1631362363 .shape-fill {
-  fill: #ffffff;
-}
-.light__theme .custom-shape-divider-top-1631364215 .shape-fill {
+.light__theme .custom-shape-divider-bottom-1631362363 .shape-fill,
+.light__theme .custom-shape-divider-top-1631364215 .shape-fill,
+.light__theme .custom-shape-divider-bottom-1631374900 .shape-fill {
   fill: #ffffff;
 }
 .light__theme #about-description,
-.light__theme #experience {
+.light__theme #experience__article,
+.light__theme #contact--article,
+.light__theme #footer {
   background-color: #ffffff;
 }
 .light__theme a {
@@ -427,12 +435,22 @@ a:link {
 
 .custom-shape-divider-top-1631364215 svg {
   width: calc(214% + 1.3px);
-  height: 79px;
+  height: 12vh;
 }
 
-#experience-divider-top {
-  -webkit-transform: rotate(180deg) translateY(-20px);
-          transform: rotate(180deg) translateY(-20px);
+.custom-shape-divider-bottom-1631374900 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1631374900 svg {
+  width: calc(300% + 1.3px);
+  height: 186px;
 }
 
 #footer {

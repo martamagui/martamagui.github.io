@@ -7,15 +7,17 @@
     rgba(251, 133, 0, 0.8) 100%
   );
   //--------------------------------------------- Waves
-  .custom-shape-divider-bottom-1631362363 .shape-fill {
+  .custom-shape-divider-bottom-1631362363 .shape-fill,
+  .custom-shape-divider-top-1631364215 .shape-fill,
+  .custom-shape-divider-bottom-1631374900 .shape-fill {
     fill: #ffffff;
   }
-  .custom-shape-divider-top-1631364215 .shape-fill {
-    fill: #ffffff;
-  }
+
   //--------------------------------------------- ABOUT
   #about-description,
-  #experience {
+  #experience__article,
+  #contact--article,
+  #footer {
     background-color: #ffffff;
   }
   //--------------------------------------------- EXPERIENCE

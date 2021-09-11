@@ -56,19 +56,26 @@
 //--------------------------- Sections layout
 
 %SectionBasicLayout {
-  padding: {
-    top: 25vh;
-    bottom: 25vh;
+  article {
+    width: 100%;
+    padding: {
+      top: 25vh;
+      bottom: 25vh;
+    }
+    @extend %DFlexCol;
+    align-items: center;
+    align-content: center;
   }
   width: 100%;
-  @extend %DFlexCol;
-  align-items: center;
-  align-content: center;
-  .inner-container {
+  .container {
+    width: auto;
     width: 55vw;
-
-    padding: 6vh;
-
+  }
+  .inner-container {
+    padding: {
+      top: 6vh;
+      bottom: 6vh;
+    }
     ul {
       width: 45vw;
       @extend %DFlexCol;
