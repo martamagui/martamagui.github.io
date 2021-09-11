@@ -1,8 +1,23 @@
 .light__theme {
   color: $lightText;
-  background-color: $lightBG1;
-
-  //----- Links
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 183, 3, 0.8) 0%,
+    rgba(251, 133, 0, 0.8) 100%
+  );
+  //--------------------------------------------- Waves
+  .custom-shape-divider-bottom-1631362363 .shape-fill {
+    fill: #ffffff;
+  }
+  .custom-shape-divider-top-1631364215 .shape-fill {
+    fill: #ffffff;
+  }
+  //--------------------------------------------- ABOUT
+  #about-description {
+    background-color: #ffffff;
+  }
+  //--------------------------------------------- Links
   a {
     color: $lightText;
   }
@@ -19,7 +34,7 @@
       color: $lightBG1;
     }
   }
-  .horizontal-divider{
+  .horizontal-divider {
     background-color: $lightText;
     opacity: 0.6;
   }

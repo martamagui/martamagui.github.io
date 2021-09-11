@@ -3,6 +3,8 @@
   @extend %DFlexCol;
   align-items: center;
   align-content: center;
+  margin: 0;
+  padding: 0;
   h2,
   .side-text {
     padding: {
@@ -13,6 +15,7 @@
   }
   #about-description {
     height: 100vh;
+    width: 100%;
     @extend %DFlexColStart;
     flex-wrap: wrap;
     .mosaic {
