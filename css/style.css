@@ -132,17 +132,6 @@ a {
   padding-left: 5vw;
 }
 
-#about #about-description .mosaic .column-1 #circumference-outer, #about #about-description .mosaic .column-1 #circle-one {
-  width: 9vw;
-  height: 9vw;
-  border-radius: 50%;
-}
-
-#about #about-description .mosaic .column-1 #triangle-two, #about #about-description .mosaic .column-1 #triangle-one {
-  width: 0;
-  height: 0;
-}
-
 .d-occult {
   opacity: 0;
   list-style: none;
@@ -203,19 +192,19 @@ a {
 }
 .light__theme {
   color: #023047;
-  background: white;
-  background: radial-gradient(circle, rgba(255, 183, 3, 0.8) 0%, rgba(251, 133, 0, 0.8) 100%);
+  background: #fff;
+  background: radial-gradient(circle, rgba(255, 183, 3, 0.8) 0%, rgba(251, 153, 0, 0.8) 100%);
 }
 .light__theme .custom-shape-divider-bottom-1631362363 .shape-fill,
 .light__theme .custom-shape-divider-top-1631364215 .shape-fill,
 .light__theme .custom-shape-divider-bottom-1631374900 .shape-fill {
-  fill: #ffffff;
+  fill: #fff;
 }
 .light__theme #about-description,
 .light__theme #experience__article,
 .light__theme #contact--article,
 .light__theme #footer {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .light__theme a {
   color: #023047;
@@ -224,7 +213,10 @@ a {
   color: #008584;
 }
 .light__theme button {
-  background-color: #d6e9e6;
+  background-color: #023047;
+}
+.light__theme button a {
+  color: #fff;
 }
 .light__theme .card-combo-1,
 .light__theme .card-combo-2 {
@@ -258,7 +250,8 @@ span {
   font-size: 2.1vh;
 }
 
-#footer a, #footer span {
+#footer a,
+#footer span {
   font-size: 1.7vh;
 }
 
@@ -352,6 +345,7 @@ a {
   outline: none;
   font-weight: 700;
   font-family: "Quattrocento", serif;
+  letter-spacing: 0.05em;
 }
 
 a:link {
@@ -454,6 +448,7 @@ a:link {
 }
 
 #footer {
+  padding: 1vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -557,17 +552,27 @@ a:link {
   padding-right: 5vw;
 }
 #about #about-description .mosaic .column-1 #circle-one {
-  background: red;
+  width: 9vw;
+  height: 9vw;
+  fill: #ffb703;
 }
-#about #about-description .mosaic .column-1 #triangle-one {
-  border-top: 8vw solid red;
-  border-left: 8vw solid transparent;
+#about #about-description .mosaic .column-1 #triangle-one svg {
+  width: 9vw;
+  height: 9vw;
 }
-#about #about-description .mosaic .column-1 #triangle-two {
-  border-top: 8vw solid red;
-  border-left: 8vw solid transparent;
+#about #about-description .mosaic .column-1 #triangle-one path {
+  fill: #27afad;
+}
+#about #about-description .mosaic .column-1 #triangle-two svg {
+  width: 9vw;
+  height: 9vw;
+}
+#about #about-description .mosaic .column-1 #triangle-two path {
+  fill: #fb5058;
 }
 #about #about-description .mosaic .column-1 #circumference-outer {
+  width: 9vw;
+  height: 9vw;
   border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;

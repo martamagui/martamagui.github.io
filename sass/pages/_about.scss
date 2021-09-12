@@ -25,21 +25,31 @@
       @extend %DFlexRow;
       .column-1 {
         #circle-one {
-          @extend %landingCircleDimensions;
-          background: red;
+          width: 9vw;
+          height: 9vw;
+          fill: $circle1;
         }
         #triangle-one {
-          @extend %landingTriangleBase;
-          border-top: 8vw solid red;
-          border-left: 8vw solid transparent;
+          svg {
+            width: 9vw;
+            height: 9vw;
+          }
+          path {
+            fill: $triangle1;
+          }
         }
         #triangle-two {
-          @extend %landingTriangleBase;
-          border-top: 8vw solid red;
-          border-left: 8vw solid transparent;
+          svg {
+            width: 9vw;
+            height: 9vw;
+          }
+          path {
+            fill: $triangle2;
+          }
         }
         #circumference-outer {
-          @extend %landingCircleDimensions;
+          width: 9vw;
+          height: 9vw;
           border: 2px solid black;
           display: flex;
           align-items: center;

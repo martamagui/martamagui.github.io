@@ -1,16 +1,12 @@
 .light__theme {
   color: $lightText;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 183, 3, 0.8) 0%,
-    rgba(251, 133, 0, 0.8) 100%
-  );
+  background: $white;
+  background: radial-gradient(circle, $gradient1 0%, $gradient2 100%);
   //--------------------------------------------- Waves
   .custom-shape-divider-bottom-1631362363 .shape-fill,
   .custom-shape-divider-top-1631364215 .shape-fill,
   .custom-shape-divider-bottom-1631374900 .shape-fill {
-    fill: #ffffff;
+    fill: $white;
   }
 
   //--------------------------------------------- ABOUT
@@ -18,7 +14,7 @@
   #experience__article,
   #contact--article,
   #footer {
-    background-color: #ffffff;
+    background-color: $white;
   }
   //--------------------------------------------- EXPERIENCE
 
@@ -30,7 +26,10 @@
     color: $lHoverText;
   }
   button {
-    background-color: $lightBG1;
+    background-color: $lightText;
+    a {
+      color: $white;
+    }
   }
   .card-combo-1,
   .card-combo-2 {

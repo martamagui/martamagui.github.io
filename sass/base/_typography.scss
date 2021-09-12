@@ -14,11 +14,11 @@ p,
 span {
   font-size: 2.1vh;
 }
-#footer{
-  a,span{
+#footer {
+  a,
+  span {
     font-size: 1.7vh;
   }
-  
 }
 // ------ Cards
 .card__description-languajes {
@@ -54,6 +54,7 @@ a {
   outline: none;
   font-weight: 700;
   font-family: "Quattrocento", serif;
+  letter-spacing: 0.05em;
 }
 a:link {
   text-decoration: none;
