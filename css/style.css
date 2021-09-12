@@ -552,28 +552,27 @@ a:link {
   padding-right: 5vw;
 }
 #about #about-description .mosaic .column-1 #circle-one {
-  width: 9vw;
-  height: 9vw;
+  width: 8vw;
+  height: 8vw;
   fill: #ffb703;
 }
 #about #about-description .mosaic .column-1 #triangle-one svg {
   width: 9vw;
-  height: 9vw;
+  height: 8vw;
 }
 #about #about-description .mosaic .column-1 #triangle-one path {
   fill: #27afad;
 }
 #about #about-description .mosaic .column-1 #triangle-two svg {
   width: 9vw;
-  height: 9vw;
+  height: 8vw;
 }
 #about #about-description .mosaic .column-1 #triangle-two path {
-  fill: #fb5058;
+  fill: #fb8500;
 }
 #about #about-description .mosaic .column-1 #circumference-outer {
   width: 9vw;
   height: 9vw;
-  border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,11 +583,11 @@ a:link {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#about #about-description .mosaic .column-1 #circumference-outer #circumference-inner {
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  border: 2px solid black;
+#about #about-description .mosaic .column-1 #circumference-outer #outer-circle {
+  fill: #023047;
+}
+#about #about-description .mosaic .column-1 #circumference-outer #inner-circle {
+  fill: #fff;
 }
 #about #about-description .mosaic .column-2 {
   width: 16vw;

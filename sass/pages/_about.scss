@@ -25,14 +25,14 @@
       @extend %DFlexRow;
       .column-1 {
         #circle-one {
-          width: 9vw;
-          height: 9vw;
+          width: 8vw;
+          height: 8vw;
           fill: $circle1;
         }
         #triangle-one {
           svg {
             width: 9vw;
-            height: 9vw;
+            height: 8vw;
           }
           path {
             fill: $triangle1;
@@ -41,7 +41,7 @@
         #triangle-two {
           svg {
             width: 9vw;
-            height: 9vw;
+            height: 8vw;
           }
           path {
             fill: $triangle2;
@@ -50,15 +50,14 @@
         #circumference-outer {
           width: 9vw;
           height: 9vw;
-          border: 2px solid black;
           display: flex;
           align-items: center;
           justify-content: center;
-          #circumference-inner {
-            width: 50%;
-            height: 50%;
-            border-radius: 50%;
-            border: 2px solid black;
+          #outer-circle {
+            fill: $circle2;
+          }
+          #inner-circle {
+            fill: $white;
           }
         }
       }
