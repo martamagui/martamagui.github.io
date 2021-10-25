@@ -63,8 +63,7 @@
       }
       .column-2 {
         width: 16vw;
-        img {
-          height: 16vw;
+        #me {
           border-radius: 0% 50%;
         }
         #form-1 {
@@ -120,4 +119,39 @@
 
 #skills__title::before {
   @include beforeTitles("01. 1 - ");
+}
+#me {
+  width: 12vw;
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    h2,
+    .side-text {
+      width: 80vw;
+    }
+  }
+  #about__p-2,
+  #about__p-3 {
+    display: none;
+  }
+
+  #about-description {
+    .mosaic {
+      width: 100vw;
+      .column-1 {
+        display: none;
+      }
+      .column-2 {
+        width: 100%;
+        #form-1,
+        #form-2 {
+          display: none;
+        }
+      }
+    }
+    #me {
+      width: 30vw;
+    }
+  }
 }

@@ -118,10 +118,6 @@ a {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-.section .container {
-  width: auto;
-  width: 55vw;
-}
 .section .inner-container {
   padding-top: 6vh;
   padding-bottom: 6vh;
@@ -516,6 +512,15 @@ a:link {
     display: none;
   }
 }
+.container {
+  width: 55vw;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+}
 #about {
   width: 100%;
   -webkit-box-align: center;
@@ -584,8 +589,7 @@ a:link {
 #about #about-description .mosaic .column-2 {
   width: 16vw;
 }
-#about #about-description .mosaic .column-2 img {
-  height: 16vw;
+#about #about-description .mosaic .column-2 #me {
   border-radius: 0% 50%;
 }
 #about #about-description .mosaic .column-2 #form-1 {
@@ -650,6 +654,38 @@ a:link {
   padding: 1vh;
 }
 
+#me {
+  width: 12vw;
+}
+
+@media screen and (max-width: 768px) {
+  #about h2,
+#about .side-text {
+    width: 80vw;
+  }
+
+  #about__p-2,
+#about__p-3 {
+    display: none;
+  }
+
+  #about-description .mosaic {
+    width: 100vw;
+  }
+  #about-description .mosaic .column-1 {
+    display: none;
+  }
+  #about-description .mosaic .column-2 {
+    width: 100%;
+  }
+  #about-description .mosaic .column-2 #form-1,
+#about-description .mosaic .column-2 #form-2 {
+    display: none;
+  }
+  #about-description #me {
+    width: 30vw;
+  }
+}
 #contact__title::before {
   content: "04 . - ";
   font-size: 2.5vh;
