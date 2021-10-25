@@ -40,8 +40,8 @@ window.addEventListener("load", async () => {
 
   let time = 0;
   for (let i = 0; i < navbarElements.length; ++i) {
-    time = i * 150;
-    setTimeout(() => addClass(navbarElements[i], "fade-in-down"), time);
+    time = i * 200;
+    setTimeout(() => addClass(navbarElements[i], "fade-in-up"), time);
   }
   for (let j = 0; j < landingElements.length; ++j) {
     time += 280;
@@ -82,7 +82,6 @@ const contactSectionAndFooter = [
   "contact__title",
   "contact-text-1",
   "contact-button",
-  
 ];
 
 window.addEventListener("scroll", () => {
