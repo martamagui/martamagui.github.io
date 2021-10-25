@@ -19,6 +19,14 @@
   @extend %DFlexRow;
   @extend %CardLayout;
 }
+//TODO Change card mobile version
+@media screen and (max-width: 768px) {
+  .card-combo-1 {
+    .card__img {
+      display: none;
+    }
+  }
+}
 .card-combo-2 {
   @extend %DFlexReverseRow;
   @extend %CardLayout;

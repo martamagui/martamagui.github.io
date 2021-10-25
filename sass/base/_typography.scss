@@ -63,3 +63,9 @@ a:link {
 .button {
   font-size: 2vh;
 }
+//--------MOBILE VERSION SIZES---------
+@media screen and (max-width: 768px) {
+  .nav {
+    font-size: 2vh;
+  }
+}

@@ -12,3 +12,12 @@
     }
   }
 }
+//TODO Change font size
+@media screen and (max-width: 768px) {
+  .landing {
+    width: 100vw;
+    .landing__text__article {
+      width: 90vw;
+    }
+  }
+}

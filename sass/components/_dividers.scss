@@ -1,39 +1,24 @@
 //-- Top
-.custom-shape-divider-bottom-1631362363 {
+.dividers {
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
 }
-
-.custom-shape-divider-bottom-1631362363 svg {
-  width: calc(214% + 1.3px);
-  height: 12vh;
+.custom-shape-divider-bottom-1631362363,
+.custom-shape-divider-bottom-1631374900 {
+  //this
+  transform: rotate(180deg);
+  svg {
+    width: calc(214% + 1.3px);
+    height: 12.2vh;
+  }
 }
 // -- Bottom
 .custom-shape-divider-top-1631364215 {
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1631364215 svg {
-  width: calc(214% + 1.3px);
-  height: 12vh;
-}
-// -- Contact
-.custom-shape-divider-bottom-1631374900 {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1631374900 svg {
-  width: calc(300% + 1.3px);
-  height: 186px;
+  //this
+  svg {
+    width: calc(214% + 1.3px);
+    height: 12.2vh;
+  }
 }

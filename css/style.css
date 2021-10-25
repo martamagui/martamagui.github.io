@@ -356,6 +356,11 @@ a:link {
   font-size: 2vh;
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    font-size: 2vh;
+  }
+}
 .button {
   padding: 2vh;
   border-radius: 0.2vh;
@@ -398,6 +403,11 @@ a:link {
   padding-top: 1vh;
 }
 
+@media screen and (max-width: 768px) {
+  .card-combo-1 .card__img {
+    display: none;
+  }
+}
 .icon {
   width: 3vw;
 }
@@ -406,45 +416,27 @@ a:link {
   height: 3.5vh;
 }
 
-.custom-shape-divider-bottom-1631362363 {
+.dividers {
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+}
+
+.custom-shape-divider-bottom-1631362363,
+.custom-shape-divider-bottom-1631374900 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-
-.custom-shape-divider-bottom-1631362363 svg {
+.custom-shape-divider-bottom-1631362363 svg,
+.custom-shape-divider-bottom-1631374900 svg {
   width: calc(214% + 1.3px);
-  height: 12vh;
-}
-
-.custom-shape-divider-top-1631364215 {
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  height: 12.2vh;
 }
 
 .custom-shape-divider-top-1631364215 svg {
   width: calc(214% + 1.3px);
-  height: 12vh;
-}
-
-.custom-shape-divider-bottom-1631374900 {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1631374900 svg {
-  width: calc(300% + 1.3px);
-  height: 186px;
+  height: 12.2vh;
 }
 
 #footer {
@@ -700,6 +692,14 @@ a:link {
   padding-bottom: 1.5vh;
 }
 
+@media screen and (max-width: 768px) {
+  .landing {
+    width: 100vw;
+  }
+  .landing .landing__text__article {
+    width: 90vw;
+  }
+}
 #experience .li__text-small {
   padding-top: 0.5vw;
   padding-left: 2.5vw;
