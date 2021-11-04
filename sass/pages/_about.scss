@@ -48,8 +48,8 @@
           }
         }
         #circumference-outer {
-          width: 9vw;
-          height: 9vw;
+          width: 8vw;
+          height: 8vw;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -67,10 +67,12 @@
           border-radius: 0% 50%;
         }
         #form-1 {
-          border: 2px solid black;
-          width: 12vw;
+          width: 30vw;
           height: 8vw;
-          border-radius: 4vw;
+          #form-1-svg {
+            height: 8vw;
+            width: 13vw;
+          }
         }
         #form-2 {
           border: 2px solid black;

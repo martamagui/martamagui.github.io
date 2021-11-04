@@ -568,8 +568,8 @@ a:link {
   fill: #fb8500;
 }
 #about #about-description .mosaic .column-1 #circumference-outer {
-  width: 9vw;
-  height: 9vw;
+  width: 8vw;
+  height: 8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,10 +593,12 @@ a:link {
   border-radius: 0% 50%;
 }
 #about #about-description .mosaic .column-2 #form-1 {
-  border: 2px solid black;
-  width: 12vw;
+  width: 30vw;
   height: 8vw;
-  border-radius: 4vw;
+}
+#about #about-description .mosaic .column-2 #form-1 #form-1-svg {
+  height: 8vw;
+  width: 13vw;
 }
 #about #about-description .mosaic .column-2 #form-2 {
   border: 2px solid black;
