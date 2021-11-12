@@ -20,17 +20,17 @@
   .word {
     display: none;
   }
-  .letter:hover {
+  /*.letter:hover {
     @include scaleLetterAnimation($size);
-  }
+  }*/
 }
 
 // Animations
 @mixin scaleLetterAnimation($lineH) {
-  transform: scale(1.2) rotateZ(4deg);
+  transform: scale(1.05) translateY(-2vh);
   padding: 0.1vh;
   line-height: $lineH + ($lineH/2);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 // Before
