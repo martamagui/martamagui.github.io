@@ -11,6 +11,7 @@
   transform: rotate(180deg);
   svg {
     width: calc(214% + 1.3px);
+    transform: translateY(-0.2vh);
     height: 12.2vh;
   }
 }

@@ -15,6 +15,12 @@
   align-items: center;
   justify-content: center;
 }
+%DFlexColSP {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: space-around;
+}
 
 %DFlexColStart {
   display: flex;
