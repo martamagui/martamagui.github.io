@@ -164,4 +164,18 @@
       order: -2;
     }
   }
+  #skills__article {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    .skills__text-container {
+      width: 80vw;
+      #skills__title {
+        width: 70vw;
+      }
+      #skills__description {
+        width: 70vw;
+      }
+    }
+  }
 }

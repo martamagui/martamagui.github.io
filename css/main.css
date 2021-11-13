@@ -497,6 +497,13 @@ a:link {
 }
 
 @media screen and (max-width: 768px) {
+  .skills__card {
+    min-height: 2vh;
+    padding: 0px;
+  }
+  .skills__card .skills__card__img {
+    display: none;
+  }
   .card-combo-1 .card__img {
     display: none;
   }
@@ -922,6 +929,20 @@ a:link {
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
+  }
+  #skills__article {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+  }
+  #skills__article .skills__text-container {
+    width: 80vw;
+  }
+  #skills__article .skills__text-container #skills__title {
+    width: 70vw;
+  }
+  #skills__article .skills__text-container #skills__description {
+    width: 70vw;
   }
 }
 
