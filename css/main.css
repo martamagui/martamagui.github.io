@@ -441,6 +441,10 @@ a:link {
   height: 3.5vh;
 }
 
+.tiny-icon:hover {
+  opacity: 0.8;
+}
+
 .dividers {
   left: 0;
   width: 100%;
@@ -726,27 +730,45 @@ a:link {
 @media screen and (max-width: 768px) {
   #about h2,
   #about .side-text {
-    width: 80vw;
+    width: 40vw;
   }
-  #about__p-2,
-  #about__p-3 {
+  #about-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #about-description .side-text {
+    display: inline-block;
+    width: 60vw;
+  }
+  #about-description #about__p-2,
+  #about-description #about__p-3 {
     display: none;
   }
   #about-description .mosaic {
-    width: 100vw;
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+    width: 25vw;
   }
   #about-description .mosaic .column-1 {
     display: none;
   }
-  #about-description .mosaic .column-2 {
-    width: 100%;
-  }
-  #about-description .mosaic .column-2 #form-1,
-  #about-description .mosaic .column-2 #form-2 {
+  #about-description .mosaic .column-2 #shape-1,
+  #about-description .mosaic .column-2 #shape-2 {
     display: none;
   }
   #about-description #me {
-    width: 30vw;
+    width: 25vw;
+  }
+  #about-description h2 {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
   }
 }
 

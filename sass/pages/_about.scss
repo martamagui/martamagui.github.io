@@ -130,30 +130,40 @@
   #about {
     h2,
     .side-text {
-      width: 80vw;
+      width: 40vw;
     }
-  }
-  #about__p-2,
-  #about__p-3 {
-    display: none;
   }
 
   #about-description {
+    display: flex;
+    flex-direction: row;
+
+    .side-text {
+      display: inline-block;
+      width: 60vw;
+    }
+    #about__p-2,
+    #about__p-3 {
+      display: none;
+    }
     .mosaic {
-      width: 100vw;
+      order: -2;
+      width: 25vw;
       .column-1 {
         display: none;
       }
       .column-2 {
-        width: 100%;
-        #form-1,
-        #form-2 {
+        #shape-1,
+        #shape-2 {
           display: none;
         }
       }
     }
     #me {
-      width: 30vw;
+      width: 25vw;
+    }
+    h2 {
+      order: -2;
     }
   }
 }
