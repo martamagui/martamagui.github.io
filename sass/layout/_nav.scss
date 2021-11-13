@@ -31,15 +31,49 @@
       }
     }
   }
+  #menu-icon {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav {
-    justify-content: flex-start;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+
     #logoAndName {
-      width: 10%;
+      #logo-icon {
+        width: 5vh;
+        height: auto;
+        opacity: 0.9;
+      }
+      width: 95vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       span {
         display: none;
       }
+    }
+    #menu-icon {
+      display: inline-block;
+      height: 4vh;
+      padding-right: 2vw;
+    }
+  }
+  #nav-list {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-start;
+    justify-content: space-around;
+    .nav__item {
+      height: auto;
     }
   }
 }

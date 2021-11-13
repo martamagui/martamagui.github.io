@@ -77,7 +77,7 @@ const experienceSection = [
   "experience-text-2",
   "experience-text-3",
 ];
-const workSection = ["work__title", "work-text-1", "card-1", "card-2"];
+const workSection = ["work__title", "work-text-1", "card-1"];
 const contactSectionAndFooter = [
   "contact__title",
   "contact-text-1",
@@ -139,3 +139,37 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+//Mobile
+if (screen.width <= 768) {
+  let menuicon = document.getElementById("menu-icon");
+  let navlist = document.getElementById("nav-list");
+  let navItemClass = Object.values(
+    document.getElementsByClassName("nav__item__link")
+  );
+  console.log(navItemClass);
+  let menuhidden = true;
+  navlist.classList.add("d-occult");
+  menuicon.addEventListener("click", () => {
+    if (menuhidden) {
+      navlist.classList.remove("d-occult");
+      menuhidden = false;
+    } else {
+      navlist.classList.add("d-occult");
+      menuhidden = true;
+    }
+  });
+
+  for (i = 0; i < navItemClass.length; ++i) {
+    navItemClass[i].addEventListener("click", () => {
+      console.log(navItemClass[i]);
+      if (menuhidden) {
+        navlist.classList.remove("d-occult");
+        menuhidden = false;
+      } else {
+        navlist.classList.add("d-occult");
+        menuhidden = true;
+      }
+    });
+  }
+}
