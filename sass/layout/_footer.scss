@@ -10,3 +10,18 @@
     padding: 2vh;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #footer {
+    span {
+      display: none;
+    }
+    .horizontal-divider {
+      margin: 2vh;
+      padding-left: 20vw;
+    }
+    .button {
+      margin: 3vh;
+    }
+  }
+}

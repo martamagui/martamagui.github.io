@@ -23,12 +23,13 @@
 @media screen and (max-width: 768px) {
   .skills__card {
     min-height: 2vh;
-    padding: 0px;
+    padding: 1vh;
     .skills__card__img {
       display: none;
     }
   }
   .card-combo-1 {
+    width: 80vw;
     .card__img {
       display: none;
     }

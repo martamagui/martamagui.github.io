@@ -450,6 +450,10 @@ a:link {
   span {
     font-size: 2.6vh;
   }
+  #footer a,
+  #footer span {
+    font-size: 2.7vh;
+  }
 }
 
 .button {
@@ -499,10 +503,13 @@ a:link {
 @media screen and (max-width: 768px) {
   .skills__card {
     min-height: 2vh;
-    padding: 0px;
+    padding: 1vh;
   }
   .skills__card .skills__card__img {
     display: none;
+  }
+  .card-combo-1 {
+    width: 80vw;
   }
   .card-combo-1 .card__img {
     display: none;
@@ -566,6 +573,19 @@ a:link {
 
 #footer span {
   padding: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+  #footer span {
+    display: none;
+  }
+  #footer .horizontal-divider {
+    margin: 2vh;
+    padding-left: 20vw;
+  }
+  #footer .button {
+    margin: 3vh;
+  }
 }
 
 #aside {
@@ -933,7 +953,7 @@ a:link {
   #skills__article {
     padding: 0px;
     margin: 0px;
-    width: 100vw;
+    width: 80vw;
   }
   #skills__article .skills__text-container {
     width: 80vw;
@@ -1054,5 +1074,11 @@ a:link {
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   gap: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cards__container {
+    width: 80vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
