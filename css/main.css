@@ -471,6 +471,11 @@ a:link {
   height: 12.2vh;
 }
 
+#experience-divider-top {
+  -webkit-transform: rotate(180deg) translateY(-0.2vh);
+          transform: rotate(180deg) translateY(-0.2vh);
+}
+
 #footer {
   padding: 1vh;
   -webkit-box-pack: justify;
