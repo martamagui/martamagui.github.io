@@ -683,7 +683,7 @@ a:link {
     display: inline-block;
     height: 4vh;
     width: 4vh;
-    padding-right: 5vw;
+    padding-right: 2vw;
   }
   #nav-list {
     width: 50vw;
@@ -719,7 +719,7 @@ a:link {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 80vw;
+    width: 85vw;
   }
 }
 
@@ -885,7 +885,7 @@ a:link {
 @media screen and (max-width: 768px) {
   #about h2,
   #about .side-text {
-    width: 40vw;
+    width: 75vw;
   }
   #about-description {
     display: -webkit-box;
@@ -898,7 +898,7 @@ a:link {
   }
   #about-description .side-text {
     display: inline-block;
-    width: 60vw;
+    width: 75vw;
   }
   #about-description #about__p-2,
   #about-description #about__p-3 {
@@ -913,12 +913,10 @@ a:link {
   #about-description .mosaic .column-1 {
     display: none;
   }
+  #about-description .mosaic .column-2 #me,
   #about-description .mosaic .column-2 #shape-1,
   #about-description .mosaic .column-2 #shape-2 {
     display: none;
-  }
-  #about-description #me {
-    width: 25vw;
   }
   #about-description h2 {
     -webkit-box-ordinal-group: -1;
