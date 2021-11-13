@@ -210,6 +210,64 @@ a {
   }
 }
 
+.rotate {
+  -webkit-animation: rotateIcon 0.3s;
+          animation: rotateIcon 0.3s;
+  -webkit-transform: translateY(1vh) rotate(90deg);
+          transform: translateY(1vh) rotate(90deg);
+}
+
+.unrotate {
+  -webkit-animation: unrotate 0.3s;
+          animation: unrotate 0.3s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+@-webkit-keyframes rotateIcon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(1vh) rotate(90deg);
+            transform: translateY(1vh) rotate(90deg);
+  }
+}
+
+@keyframes rotateIcon {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: translateY(1vh) rotate(90deg);
+            transform: translateY(1vh) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes unrotate {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes unrotate {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .light__theme {
   color: #023047;
   background: #fff;
@@ -514,6 +572,12 @@ a:link {
   gap: 1.5vh;
 }
 
+@media screen and (max-width: 768px) {
+  #aside {
+    display: none;
+  }
+}
+
 .nav {
   padding: 1vh;
   -webkit-box-pack: justify;
@@ -571,6 +635,10 @@ a:link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    margin-top: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -581,9 +649,12 @@ a:link {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    padding: 0px;
   }
   .nav #logoAndName {
-    width: 95vw;
+    z-index: 11;
+    background-color: #fffffff1;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -594,23 +665,33 @@ a:link {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .nav #logoAndName #logo-icon {
-    width: 5vh;
-    height: auto;
-    opacity: 0.9;
+    padding: 1.5vh;
+    margin: 0px;
+    -webkit-box-shadow: 2px 2px 5px #02304758;
+            box-shadow: 2px 2px 5px #02304758;
   }
   .nav #logoAndName span {
     display: none;
   }
+  .nav #logoAndName #logo-icon {
+    width: 5vh;
+    height: auto;
+    padding-left: 4vw;
+    opacity: 0.9;
+  }
   .nav #menu-icon {
     display: inline-block;
     height: 4vh;
-    padding-right: 2vw;
+    width: 4vh;
+    padding-right: 5vw;
   }
   #nav-list {
     width: 50vw;
-    height: auto;
+    height: 100vh;
+    margin-right: 0px;
+    background-color: #fffffff1;
+    -webkit-box-shadow: 0px 2px 10px #02304758;
+            box-shadow: 0px 2px 10px #02304758;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -628,6 +709,7 @@ a:link {
   }
   #nav-list .nav__item {
     height: auto;
+    padding: 6vh;
   }
 }
 

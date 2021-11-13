@@ -15,7 +15,6 @@
     opacity: 0;
     transform: translateY(-5vh);
   }
-
   to {
     opacity: 1;
   }
@@ -25,8 +24,32 @@
     opacity: 0;
     transform: translateY(5vh);
   }
-
   to {
     opacity: 1;
+  }
+}
+.rotate {
+  animation: rotateIcon 0.3s;
+  transform: translateY(1vh) rotate(90deg);
+}
+.unrotate {
+  animation: unrotate 0.3s;
+  transform: rotate(0deg);
+}
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: translateY(1vh) rotate(90deg);
+  }
+}
+
+@keyframes unrotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }

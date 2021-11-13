@@ -150,26 +150,23 @@ if (screen.width <= 768) {
   console.log(navItemClass);
   let menuhidden = true;
   navlist.classList.add("d-occult");
-  menuicon.addEventListener("click", () => {
+
+  // ------------------------------------------------------------------- Nav toggle functions and animations
+  const mHidden = () => {
     if (menuhidden) {
       navlist.classList.remove("d-occult");
+      menuicon.classList.add("rotate");
+      menuicon.classList.remove("unrotate");
       menuhidden = false;
     } else {
       navlist.classList.add("d-occult");
+      menuicon.classList.remove("rotate");
+      menuicon.classList.add("unrotate");
       menuhidden = true;
     }
-  });
-
+  };
+  menuicon.addEventListener("click", mHidden);
   for (i = 0; i < navItemClass.length; ++i) {
-    navItemClass[i].addEventListener("click", () => {
-      console.log(navItemClass[i]);
-      if (menuhidden) {
-        navlist.classList.remove("d-occult");
-        menuhidden = false;
-      } else {
-        navlist.classList.add("d-occult");
-        menuhidden = true;
-      }
-    });
+    navItemClass[i].addEventListener("click", mHidden);
   }
 }
