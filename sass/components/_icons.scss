@@ -7,3 +7,8 @@
 .tiny-icon:hover {
   opacity: 0.8;
 }
+@media screen and (max-width: 768px) {
+  .tiny-icon {
+    height: 4.5vh;
+  }
+}

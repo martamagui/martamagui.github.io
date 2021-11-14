@@ -50,6 +50,11 @@
     color: $darkerText;
   }
 }
+@media screen and (max-width: 768px) {
+  #aside {
+    background-color: $white;
+  }
+}
 
 /*.dark__theme {
 }
