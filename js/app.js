@@ -141,7 +141,9 @@ window.addEventListener("scroll", () => {
 });
 // ------------------------------------------------------------------- Scroll to top
 const btnTop = document.getElementById("btn-bot");
+
 btnTop.addEventListener("click", () => {
+  console.log("holi");
   window.scrollTo(0, 0);
 });
 
@@ -155,16 +157,19 @@ if (screen.width <= 768) {
   console.log(navItemClass);
   let menuhidden = true;
   navlist.classList.add("d-occult");
+  navlist.classList.add("no-width");
 
   // ------------------------------------------------------------------- Nav toggle functions and animations
   const mHidden = () => {
     if (menuhidden) {
       navlist.classList.remove("d-occult");
+      navlist.classList.remove("no-width");
       menuicon.classList.add("rotate");
       menuicon.classList.remove("unrotate");
       menuhidden = false;
     } else {
       navlist.classList.add("d-occult");
+      navlist.classList.add("no-width");
       menuicon.classList.remove("rotate");
       menuicon.classList.add("unrotate");
       menuhidden = true;

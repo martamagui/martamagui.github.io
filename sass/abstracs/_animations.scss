@@ -30,7 +30,7 @@
 }
 .rotate {
   animation: rotateIcon 0.3s;
-  transform: translateY(1vh) rotate(90deg);
+  transform: translateY(0.7vh) rotate(90deg);
 }
 .unrotate {
   animation: unrotate 0.3s;
@@ -41,7 +41,7 @@
     transform: rotate(0deg);
   }
   to {
-    transform: translateY(1vh) rotate(90deg);
+    transform: translateY(0.7vh) rotate(90deg);
   }
 }
 

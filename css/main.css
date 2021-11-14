@@ -21,6 +21,20 @@ a {
           flex-direction: column;
 }
 
+.no-width {
+  -webkit-transform: translateX(50vw);
+          transform: translateX(50vw);
+  height: 0px;
+  width: 0px;
+  padding: 0px;
+}
+
+.no-width li {
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+}
+
 .card-combo-1, .nav, .nav #logoAndName, .nav .nav__list, #about #about-description .mosaic, #about .skills .skills__card-container #git, .landing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,8 +245,8 @@ a {
 .rotate {
   -webkit-animation: rotateIcon 0.3s;
           animation: rotateIcon 0.3s;
-  -webkit-transform: translateY(1vh) rotate(90deg);
-          transform: translateY(1vh) rotate(90deg);
+  -webkit-transform: translateY(0.7vh) rotate(90deg);
+          transform: translateY(0.7vh) rotate(90deg);
 }
 
 .unrotate {
@@ -248,8 +262,8 @@ a {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: translateY(1vh) rotate(90deg);
-            transform: translateY(1vh) rotate(90deg);
+    -webkit-transform: translateY(0.7vh) rotate(90deg);
+            transform: translateY(0.7vh) rotate(90deg);
   }
 }
 
@@ -259,8 +273,8 @@ a {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: translateY(1vh) rotate(90deg);
-            transform: translateY(1vh) rotate(90deg);
+    -webkit-transform: translateY(0.7vh) rotate(90deg);
+            transform: translateY(0.7vh) rotate(90deg);
   }
 }
 
@@ -687,8 +701,8 @@ a:link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
     width: 100vw;
+    height: 10vh;
     margin: 0px;
     margin-top: 0px;
     -webkit-box-orient: vertical;
@@ -739,7 +753,6 @@ a:link {
   }
   #nav-list {
     width: 50vw;
-    height: 100vh;
     margin-right: 0px;
     background-color: #fffffff1;
     -webkit-box-shadow: 0px 2px 10px #02304758;
