@@ -4,6 +4,11 @@
   flex-direction: row;
   align-items: center;
 }
+%DFlexRowStart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 %DFlexReverseRow {
   display: flex;
   flex-direction: row-reverse;
@@ -41,7 +46,7 @@
 
 %CardLayout {
   width: 45vw;
-  border-radius: 1vh;
+  border-radius: 0.5vh;
   .card__caption {
     @extend %DFlexColStart;
     padding: 3.5vh;

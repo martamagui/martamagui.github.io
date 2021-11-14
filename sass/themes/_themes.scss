@@ -2,6 +2,7 @@
   color: $lightText;
   background: $white;
   background: radial-gradient(circle, $gradient1 0%, $gradient2 100%);
+
   //--------------------------------------------- Waves
   .custom-shape-divider-bottom-1631362363 .shape-fill,
   .custom-shape-divider-top-1631364215 .shape-fill,
@@ -27,20 +28,23 @@
   }
   button {
     background-color: $lightText;
+    p,
     a {
       color: $white;
     }
   }
   .card-combo-1,
   .card-combo-2 {
-    background-color: $lightText;
-    .card__caption {
-      color: $lightBG1;
-    }
+    background-color: $white;
+
+    color: $darkerText;
   }
   .horizontal-divider {
     background-color: $lightText;
     opacity: 0.6;
+  }
+  .light-text {
+    color: $darkerText;
   }
 }
 

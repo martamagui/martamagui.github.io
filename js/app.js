@@ -139,6 +139,11 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+// ------------------------------------------------------------------- Scroll to top
+const btnTop = document.getElementById("btn-bot");
+btnTop.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
 
 //Mobile
 if (screen.width <= 768) {

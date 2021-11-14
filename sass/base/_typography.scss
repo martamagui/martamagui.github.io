@@ -22,7 +22,7 @@ span {
 }
 // ------ Cards
 .card__description-languajes {
-  font-size: 1.7vh;
+  font-size: 1.6vh;
 }
 // ------ Titles
 .text__title-medium {
@@ -34,8 +34,9 @@ span {
   @include titleBase(4.5vh);
 }
 .card__title {
+  letter-spacing: 1.5px;
   font: {
-    size: 3vh;
+    size: 3.5vh;
     family: "Oswald", sans-serif;
   }
 }
