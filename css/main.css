@@ -448,11 +448,17 @@ a:link {
   a,
   p,
   span {
-    font-size: 2.6vh;
+    font-size: 2.5vh;
+  }
+  .li__text-big {
+    font-size: 2.7vh;
+  }
+  .li__text-small {
+    font-size: 2.5vh;
   }
   #footer a,
   #footer span {
-    font-size: 2.7vh;
+    font-size: 2.6vh;
   }
 }
 
@@ -1033,6 +1039,14 @@ a:link {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+  #experience ul {
+    padding-top: 8vw;
+    padding-left: 8vw;
+    width: 75vw;
+  }
 }
 
 #work__title::before {
