@@ -2,17 +2,12 @@
   background-color: white;
   border-radius: 1vh;
   min-height: 13vh;
-  @extend %DFlexCol;
-  justify-content: center;
-  h4 {
-    justify-self: flex-end;
-    padding: {
-      top: 1.5vh;
-      bottom: 1vh;
-    }
-  }
+  @extend %DFlexColSPCenter;
   img {
-    padding-top: 1vh;
+    padding-top: 2vh;
+  }
+  h4 {
+    padding-bottom: 1.5vh;
   }
 }
 .card-combo-1 {
@@ -23,10 +18,14 @@
 @media screen and (max-width: 768px) {
   .skills__card {
     min-height: 2vh;
+    padding-bottom: 0px;
     padding: 1vh;
-    .skills__card__img {
-      display: none;
+    h4 {
+      padding: 0px;
     }
+  }
+  .skills__card__img {
+    display: none;
   }
   .card-combo-1 {
     width: 80vw;

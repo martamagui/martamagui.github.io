@@ -47,7 +47,7 @@ a {
           align-items: center;
 }
 
-.section article, .section .inner-container ul, .skills__card, #footer, #about, #about .skills {
+.section article, .section .inner-container ul, #footer, #about, #about .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +75,24 @@ a {
       align-content: flex-end;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.skills__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card-combo-1 .card__caption, .card-combo-2 .card__caption, #about #about-description {
@@ -491,27 +509,26 @@ a:link {
   background-color: white;
   border-radius: 1vh;
   min-height: 13vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.skills__card h4 {
-  justify-self: flex-end;
-  padding-top: 1.5vh;
-  padding-bottom: 1vh;
 }
 
 .skills__card img {
-  padding-top: 1vh;
+  padding-top: 2vh;
+}
+
+.skills__card h4 {
+  padding-bottom: 1.5vh;
 }
 
 @media screen and (max-width: 768px) {
   .skills__card {
     min-height: 2vh;
+    padding-bottom: 0px;
     padding: 1vh;
   }
-  .skills__card .skills__card__img {
+  .skills__card h4 {
+    padding: 0px;
+  }
+  .skills__card__img {
     display: none;
   }
   .card-combo-1 {
