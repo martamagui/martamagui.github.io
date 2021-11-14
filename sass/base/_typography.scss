@@ -29,7 +29,6 @@ span {
   /* "word class is only for responsive*/
   @include titleBase(7vh);
 }
-
 .text__title-small {
   @include titleBase(4.5vh);
 }
@@ -38,6 +37,9 @@ span {
   font: {
     size: 3.5vh;
     family: "Oswald", sans-serif;
+  }
+  .card__title-date {
+    font-size: 1.6vh;
   }
 }
 
@@ -79,6 +81,9 @@ a:link {
   p,
   span {
     font-size: 2.5vh;
+  }
+  .card__description-languajes {
+    font-size: 2.3vh;
   }
   .li__text-big {
     font-size: 2.7vh;

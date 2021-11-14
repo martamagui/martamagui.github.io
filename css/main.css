@@ -152,7 +152,7 @@ a {
 .card-combo-1 .card__img, .card-combo-2 .card__img {
   border-radius: 4vh;
   padding: 3vh;
-  height: 15em;
+  height: 26vh;
 }
 
 .section {
@@ -336,6 +336,10 @@ a {
   color: #fff;
 }
 
+.light__theme .button a:hover {
+  color: #fff;
+}
+
 .light__theme .card-combo-1,
 .light__theme .card-combo-2 {
   background-color: #fff;
@@ -448,6 +452,10 @@ span {
   font-family: "Oswald", sans-serif;
 }
 
+.card__title .card__title-date {
+  font-size: 1.6vh;
+}
+
 .li__text-big {
   font-size: 3vh;
   font-family: "Oswald", sans-serif;
@@ -484,6 +492,9 @@ a:link {
   span {
     font-size: 2.5vh;
   }
+  .card__description-languajes {
+    font-size: 2.3vh;
+  }
   .li__text-big {
     font-size: 2.7vh;
   }
@@ -501,6 +512,10 @@ a:link {
   border-radius: 0.2vh;
   border: 0;
   /*box-shadow: 0.3em 0.3em 0 0 #19bc8b, inset 0.3em 0.3em 0 0 #19bc8b;*/
+}
+
+.button:hover {
+  opacity: 0.85;
 }
 
 /*.button:hover {
@@ -535,6 +550,12 @@ a:link {
   padding-bottom: 1.5vh;
 }
 
+@media screen and (max-width: 992px) {
+  .card__img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .skills__card {
     min-height: 2vh;
@@ -549,9 +570,6 @@ a:link {
   }
   .card-combo-1 {
     width: 80vw;
-  }
-  .card-combo-1 .card__img {
-    display: none;
   }
 }
 
@@ -675,11 +693,10 @@ a:link {
 }
 
 .nav .nav__list {
-  width: 50%;
+  width: 60%;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .nav .nav__list .nav__item {
@@ -1091,14 +1108,23 @@ a:link {
   padding: 1vh;
 }
 
+#work__title {
+  padding: 0px;
+  margin: 0px;
+}
+
+#work .inner-container {
+  padding-top: 5vh;
+}
+
 #work .inner-container .work__description {
-  padding: 2vh;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
 .cards__container {
   padding: 2vh;
+  padding-top: 4vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];

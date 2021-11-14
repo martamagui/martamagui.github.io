@@ -1,12 +1,15 @@
 #work__title::before {
   @include beforeTitles("03 . - ");
 }
-
+#work__title {
+  padding: 0px;
+  margin: 0px;
+}
 #work {
   .inner-container {
+    padding-top: 5vh;
     @extend %DFlexColStart;
     .work__description {
-      padding: 2vh;
       align-self: flex-start;
     }
   }
@@ -14,6 +17,7 @@
 
 .cards__container {
   padding: 2vh;
+  padding-top: 4vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2vh;

@@ -9,7 +9,6 @@
   .custom-shape-divider-bottom-1631374900 .shape-fill {
     fill: $white;
   }
-
   //--------------------------------------------- ABOUT
   #about-description,
   #experience__article,
@@ -33,10 +32,14 @@
       color: $white;
     }
   }
+  .button {
+    a:hover {
+      color: $white;
+    }
+  }
   .card-combo-1,
   .card-combo-2 {
     background-color: $white;
-
     color: $darkerText;
   }
   .horizontal-divider {
