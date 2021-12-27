@@ -60,6 +60,8 @@ const aboutSection = [
 const mySkillsArticle = [
   "skills__title",
   "skills__description",
+  "kotlin-card",
+  "swift-card",
   "java-card",
   "html-card",
   "css-card",
@@ -68,6 +70,7 @@ const mySkillsArticle = [
   "mongodb-card",
   "react-card",
   "sass-card",
+  "node-card",
   "git",
 ];
 const experienceSection = [
