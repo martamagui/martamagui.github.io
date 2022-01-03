@@ -71,6 +71,7 @@ const mySkillsArticle = [
   "react-card",
   "sass-card",
   "node-card",
+  "spring-card",
   "git",
 ];
 const experienceSection = [
@@ -80,7 +81,13 @@ const experienceSection = [
   "experience-text-2",
   "experience-text-3",
 ];
-const workSection = ["work__title", "work-text-1", "card-2", "card-1"];
+const workSection = [
+  "work__title",
+  "work-text-1",
+  "card-2",
+  "card-1",
+  "card-3",
+];
 const contactSectionAndFooter = [
   "contact__title",
   "contact-text-1",
